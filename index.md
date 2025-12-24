@@ -34,7 +34,7 @@
 </style>
 
 **Navigation:**  
-[Home](/terrycolepodcaststudio/) ·
+[Home](/terrycolepodcaststudio/index) ·
 [About](/terrycolepodcaststudio/about) ·
 [Shows](/terrycolepodcaststudio/shows) ·
 [Contact](/terrycolepodcaststudio/contact)
