@@ -2,31 +2,27 @@
   body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
                  Roboto, Helvetica, Arial, sans-serif;
-    line-height: 1.6;
+    line-height: 1.65;
     max-width: 900px;
     margin: auto;
-    padding: 1rem;
+    padding: 1.25rem;
+    color: #222;
   }
 
   h1 {
-    font-size: 2rem;
-    margin-top: 1.5rem;
+    font-size: 2.1rem;
+    border-bottom: 3px solid #990000;
+    padding-bottom: 0.25rem;
   }
 
-  h2 {
-    font-size: 1.4rem;
-    margin-top: 2rem;
-  }
-
-  iframe {
-    margin-top: 0.75rem;
-    margin-bottom: 1.25rem;
-  }
-
-  hr {
-    margin: 2rem 0;
+  .callout {
+    background: #f7f7f7;
+    border-left: 5px solid #990000;
+    padding: 1rem 1.25rem;
+    margin: 1.5rem 0;
   }
 </style>
+
 **Navigation:**  
 [Home](/terrycolepodcaststudio/) ·
 [About](/terrycolepodcaststudio/about) ·
@@ -37,6 +33,15 @@
 
 # About the Studio
 
-The Terry Cole Podcast Studio is part of the Terry Cole Broadcast & Recording Studio and is dedicated to preserving the legacy of broadcaster Terry Cole.
+The Terry Cole Podcast Studio is part of the **Terry Cole Broadcast & Recording Studio**, created to preserve broadcast history and support meaningful audio storytelling.
 
-More information coming soon.
+<div class="callout">
+Rooted in radio tradition, the studio honors the legacy of broadcaster Terry Cole while fostering new recorded works and community voices.
+</div>
+
+The studio’s work includes archival preservation, original podcast production, and collaborative audio projects.
+
+---
+
+© Terry Cole Podcast Studio  
+Part of the Terry Cole Broadcast & Recording Studio
