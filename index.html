@@ -9,97 +9,131 @@
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
                    Roboto, Helvetica, Arial, sans-serif;
+      margin: 0;
+      background: #ffffff;
+      color: #111;
       line-height: 1.65;
+    }
+
+    .container {
       max-width: 900px;
-      margin: auto;
-      padding: 1.25rem;
-      color: #222;
+      margin: 0 auto;
+      padding: 36px 24px;
+    }
+
+    nav {
+      font-size: 0.95rem;
+      margin-bottom: 32px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #555;
+      margin-right: 10px;
+    }
+
+    nav a.active {
+      color: #8b0000;
+      font-weight: 600;
     }
 
     h1 {
       font-size: 2.1rem;
-      border-bottom: 3px solid #990000;
-      padding-bottom: 0.25rem;
+      margin-bottom: 6px;
     }
 
-    h2 {
-      font-size: 1.45rem;
-      margin-top: 2.25rem;
-      color: #990000;
-    }
-
-    .nav {
+    .subtitle {
       font-size: 0.95rem;
-      margin-bottom: 1.5rem;
-    }
-
-    .nav a {
-      text-decoration: none;
       color: #555;
-      margin-right: 0.5rem;
+      margin-bottom: 20px;
     }
 
-    .nav .current {
-      color: #990000;
-      font-weight: 600;
+    .rule {
+      border-bottom: 3px solid #8b0000;
+      margin: 16px 0 28px;
+    }
+
+    .intro {
+      font-size: 1.05rem;
+      max-width: 720px;
     }
 
     .callout {
       background: #f7f7f7;
-      border-left: 5px solid #990000;
-      padding: 1rem 1.25rem;
-      margin: 1.5rem 0;
+      border-left: 5px solid #8b0000;
+      padding: 18px 22px;
+      margin: 36px 0;
     }
 
-    hr {
-      margin: 2.75rem 0;
+    h2 {
+      font-size: 1.25rem;
+      color: #8b0000;
+      margin-top: 40px;
+    }
+
+    ul {
+      margin-top: 12px;
+      padding-left: 22px;
+    }
+
+    footer {
+      margin-top: 64px;
+      padding-top: 18px;
+      border-top: 1px solid #ccc;
+      font-size: 0.85rem;
+      color: #555;
     }
   </style>
 </head>
 
 <body>
+  <div class="container">
 
-<nav>
-  <a href="/terrycolepodcaststudio/">Home</a> ·
-  <a href="/terrycolepodcaststudio/about.html">About</a> ·
-  <a href="/terrycolepodcaststudio/shows.html">Shows</a> ·
-  <a href="/terrycolepodcaststudio/contact.html">Contact</a>
-</nav>
+    <nav>
+      <a class="active" href="/terrycolepodcaststudio/">Home</a> ·
+      <a href="/terrycolepodcaststudio/about.html">About</a> ·
+      <a href="/terrycolepodcaststudio/shows.html">Shows</a> ·
+      <a href="/terrycolepodcaststudio/contact.html">Contact</a>
+    </nav>
 
-<hr>
+    <h1>Terry Cole Podcast Studio</h1>
+    <div class="subtitle">
+      Part of the <strong>Terry Cole Broadcast &amp; Recording Studio</strong>.
+    </div>
 
-<h1>Terry Cole Podcast Studio</h1>
+    <div class="rule"></div>
 
-<p><strong>Part of the Terry Cole Broadcast & Recording Studio.</strong></p>
+    <p class="intro">
+      The Terry Cole Podcast Studio is dedicated to preserving and sharing the legacy of broadcaster Terry Cole through podcasts, recorded audio projects, and archival storytelling.
+    </p>
 
-<p>
-The Terry Cole Podcast Studio is dedicated to preserving broadcast history while
-producing meaningful audio projects rooted in storytelling, legacy, and community voices.
-</p>
+    <p class="intro">
+      Based in Ohio, the studio serves as a home for meaningful conversations, historical audio, and voices worth remembering.
+    </p>
 
-<div class="callout">
-The studio serves as the audio home of the Terry Cole Broadcast & Recording Studio —
-honoring the past while supporting new recorded works.
-</div>
+    <div class="callout">
+      <h2>🎙️ Listen &amp; Learn</h2>
+      <ul>
+        <li>Podcasts honoring broadcast history</li>
+        <li>Archival audio projects</li>
+        <li>Special recordings and tributes</li>
+      </ul>
+    </div>
 
-<h2>Explore the Studio</h2>
+    <h2>📡 Connect</h2>
+    <p>
+      Website:
+      <a href="https://terrycolepodcaststudio.com">terrycolepodcaststudio.com</a><br>
+      Email:
+      <a href="mailto:bhamblin@terrycolepodcaststudio.com">
+        bhamblin@terrycolepodcaststudio.com
+      </a>
+    </p>
 
-<ul>
-  <li>🎙️ Flagship archival series and preserved broadcasts</li>
-  <li>🎧 Ongoing institutional and community podcasts</li>
-  <li>🎚️ Original studio productions and collaborations</li>
-</ul>
+    <footer>
+      <em>Broadcast legacy. Recorded with care.</em>
+    </footer>
 
-<p>
-Visit the <strong>Shows</strong> page to listen.
-</p>
-
-<hr>
-
-<p style="font-size:0.85rem;color:#555;">
-© Terry Cole Podcast Studio<br>
-Part of the Terry Cole Broadcast & Recording Studio
-</p>
-
+  </div>
 </body>
 </html>
