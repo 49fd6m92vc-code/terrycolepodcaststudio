@@ -18,11 +18,11 @@ All programs are officially hosted on **Spreaker (from iHeart)** and are present
 Preserved broadcasts and historical audio recordings connected to Terry Cole’s career in radio.
 
 <iframe
-  src="https://widget.spreaker.com/player?show_id=5365299&theme=light&playlist=show&playlist-continuous=true&chapters-image=true"
+  src="https://www.iheart.com/podcast/53-terry-coles-audio-archives-102630732/episode/wnci-979-1753?app=listen&embed=true"
   width="100%"
-  height="400"
+  height="200"
   frameborder="0"
-  allowfullscreen>
+  allow="autoplay">
 </iframe>
 
 ---
