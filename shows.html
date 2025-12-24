@@ -4,51 +4,86 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Shows · Terry Cole Podcast Studio</title>
+
   <style>
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+                   Roboto, Helvetica, Arial, sans-serif;
       margin: 0;
       background: #ffffff;
       color: #111;
-      line-height: 1.6;
+      line-height: 1.65;
     }
+
     .container {
       max-width: 900px;
       margin: 0 auto;
-      padding: 32px 24px;
+      padding: 40px 24px;
     }
+
+    nav {
+      font-size: 0.95rem;
+      margin-bottom: 36px;
+    }
+
     nav a {
       text-decoration: none;
       color: #555;
       margin-right: 12px;
     }
+
     nav a.active {
       color: #8b0000;
       font-weight: 600;
     }
+
     h1 {
-      font-size: 32px;
+      font-size: 2.2rem;
+      margin-bottom: 6px;
     }
+
+    .subtitle {
+      font-size: 0.95rem;
+      color: #555;
+      margin-bottom: 18px;
+    }
+
     .rule {
       border-bottom: 3px solid #8b0000;
-      margin: 12px 0 24px;
+      margin: 18px 0 32px;
     }
+
+    p {
+      max-width: 760px;
+    }
+
     .show {
-      margin-bottom: 48px;
+      margin-bottom: 56px;
     }
+
     .show h2 {
       color: #8b0000;
-      margin-bottom: 8px;
+      margin-bottom: 10px;
+      font-size: 1.35rem;
     }
+
     iframe {
-      margin-top: 12px;
+      margin-top: 14px;
       border: none;
     }
+
+    .about-playback {
+      background: #f7f7f7;
+      border-left: 5px solid #8b0000;
+      padding: 20px 24px;
+      margin: 48px 0;
+    }
+
     footer {
-      margin-top: 60px;
+      margin-top: 70px;
       padding-top: 20px;
       border-top: 1px solid #ccc;
-      font-size: 14px;
+      font-size: 0.85rem;
       color: #555;
     }
   </style>
@@ -57,52 +92,105 @@
 <body>
   <div class="container">
 
+    <!-- Navigation -->
     <nav>
-  <a href="/terrycolepodcaststudio/">Home</a> ·
-  <a href="/terrycolepodcaststudio/about.html">About</a> ·
-  <a href="/terrycolepodcaststudio/shows.html">Shows</a> ·
-  <a href="/terrycolepodcaststudio/contact.html">Contact</a>
-</nav>
+      <a href="/terrycolepodcaststudio/">Home</a> ·
+      <a href="/terrycolepodcaststudio/about.html">About</a> ·
+      <a class="active" href="/terrycolepodcaststudio/shows.html">Shows</a> ·
+      <a href="/terrycolepodcaststudio/contact.html">Contact</a>
+    </nav>
 
-    <h1>Studio Shows</h1>
+    <!-- Page Header -->
+    <h1>Shows &amp; Audio Projects</h1>
     <div class="rule"></div>
+
+    <p>
+      The Terry Cole Podcast Studio is home to podcasts and recorded audio projects produced by the
+      Terry Cole Broadcast &amp; Recording Studio.
+    </p>
+
+    <p>
+      All programs are officially hosted on <strong>Spreaker (from iHeart)</strong> and are presented
+      here for direct listening.
+    </p>
+
+    <!-- Shows -->
 
     <div class="show">
       <h2>🎙️ Terry Cole’s Audio Archives</h2>
-      <p>Preserved broadcasts and historical audio recordings from Terry Cole’s career in radio.</p>
-      <iframe src="https://widget.spreaker.com/player?show_id=5365299&theme=light&playlist=show&hide-logo=true&hide-likes=true&hide-comments=true&hide-sharing=true&hide-download=true"
-        width="100%" height="350"></iframe>
+      <p>
+        Preserved broadcasts and historical audio recordings connected to Terry Cole’s career in radio.
+      </p>
+      <iframe
+        src="https://widget.spreaker.com/player?show_id=5365299&theme=light&playlist=show&hide-logo=true&hide-likes=true&hide-comments=true&hide-sharing=true&hide-download=true"
+        width="100%"
+        height="350">
+      </iframe>
     </div>
 
     <div class="show">
       <h2>🎧 OSSB Inside and Out</h2>
-      <p>Exploring the people, stories, and legacy of the Ohio State School for the Blind.</p>
-      <iframe src="https://widget.spreaker.com/player?show_id=4120454&theme=light&playlist=show&hide-logo=true"
-        width="100%" height="350"></iframe>
+      <p>
+        A podcast exploring the people, stories, and community of the Ohio State School for the Blind.
+      </p>
+      <iframe
+        src="https://widget.spreaker.com/player?show_id=4120454&theme=light&playlist=show&hide-logo=true"
+        width="100%"
+        height="350">
+      </iframe>
     </div>
 
     <div class="show">
       <h2>🎚️ Brendon Hamblin’s Audio Projects</h2>
-      <p>Original audio projects, interviews, and recorded works.</p>
-      <iframe src="https://widget.spreaker.com/player?show_id=4664315&theme=light&playlist=show&hide-logo=true"
-        width="100%" height="350"></iframe>
+      <p>
+        Independent audio projects, recordings, and special productions.
+      </p>
+      <iframe
+        src="https://widget.spreaker.com/player?show_id=4664315&theme=light&playlist=show&hide-logo=true"
+        width="100%"
+        height="350">
+      </iframe>
     </div>
 
     <div class="show">
-      <h2>🎙️ Andy & Steph’s Top Ten Podcast</h2>
-      <iframe src="https://widget.spreaker.com/player?show_id=5020228&theme=light&playlist=show&hide-logo=true"
-        width="100%" height="350"></iframe>
+      <h2>🎤 Andy &amp; Steph’s Top Ten Podcast</h2>
+      <p>
+        A conversational podcast covering favorites, rankings, and pop culture topics.
+      </p>
+      <iframe
+        src="https://widget.spreaker.com/player?show_id=5020228&theme=light&playlist=show&hide-logo=true"
+        width="100%"
+        height="350">
+      </iframe>
     </div>
 
     <div class="show">
-      <h2>🎙️ The Andy & Brendon Podcast</h2>
-      <iframe src="https://widget.spreaker.com/player?show_id=4580634&theme=light&playlist=show&hide-logo=true"
-        width="100%" height="350"></iframe>
+      <h2>🎙️ The Andy &amp; Brendon Podcast</h2>
+      <p>
+        Conversations, commentary, and collaborative discussions.
+      </p>
+      <iframe
+        src="https://widget.spreaker.com/player?show_id=4580634&theme=light&playlist=show&hide-logo=true"
+        width="100%"
+        height="350">
+      </iframe>
     </div>
 
+    <!-- About Playback -->
+    <div class="about-playback">
+      <h3>About Playback</h3>
+      <ul>
+        <li>Players update automatically as new episodes are published</li>
+        <li>Playback is provided directly by Spreaker</li>
+        <li>Hosting and distribution remain under the iHeart network</li>
+      </ul>
+    </div>
+
+    <!-- Footer -->
     <footer>
+      <em>Broadcast legacy. Recorded with care.</em><br><br>
       © Terry Cole Podcast Studio<br>
-      Part of the Terry Cole Broadcast & Recording Studio
+      Part of the Terry Cole Broadcast &amp; Recording Studio
     </footer>
 
   </div>
