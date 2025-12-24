@@ -29,7 +29,13 @@ Preserved broadcasts and historical audio recordings connected to Terry Cole’s
 ## 🎧 OSSB Inside and Out
 A podcast exploring the people, stories, and community of the Ohio State School for the Blind.
 
-<!-- PASTE SPOKER SHOW EMBED HERE -->
+<iframe
+  src="https://widget.spreaker.com/player?show_id=4120454&theme=light&playlist=false&playlist-continuous=false&chapters-image=true&episode_image_position=left&hide-logo=true&hide-likes=true&hide-comments=true&hide-sharing=true&hide-download=true"
+  width="100%"
+  height="200"
+  title="OSSB Inside and Out"
+  frameborder="0">
+</iframe>
 
 ---
 
