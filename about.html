@@ -12,37 +12,83 @@
       color: #111;
       line-height: 1.6;
     }
+
     .container {
       max-width: 900px;
       margin: 0 auto;
       padding: 32px 24px;
     }
-    nav {
-      margin-bottom: 24px;
+
+    /* Header */
+    .site-header {
+      margin-bottom: 40px;
     }
-    nav a {
+
+    .branding {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 12px;
+    }
+
+    .site-logo {
+      width: 64px;
+      height: auto;
+    }
+
+    .site-title h1 {
+      margin: 0;
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    .site-parent {
+      margin: 2px 0 0;
+      font-size: 14px;
+      color: #555;
+    }
+
+    /* Navigation */
+    .site-nav a {
       text-decoration: none;
       color: #555;
-      margin-right: 12px;
+      margin-right: 14px;
+      font-size: 15px;
     }
-    nav a.active {
+
+    .site-nav a.active {
       color: #8b0000;
       font-weight: 600;
     }
-    h1 {
-      font-size: 32px;
-      margin-bottom: 8px;
+
+    /* Headings */
+    h2 {
+      font-size: 28px;
+      margin-top: 0;
     }
+
     .rule {
       border-bottom: 3px solid #8b0000;
       margin: 12px 0 24px;
     }
+
+    /* Callout */
     .callout {
       border-left: 4px solid #8b0000;
       background: #f7f7f7;
       padding: 16px 20px;
       margin: 32px 0;
     }
+
+    /* Lists */
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
     footer {
       margin-top: 60px;
       padding-top: 20px;
@@ -59,8 +105,7 @@
   }
 
   .site-logo {
-    width: 72px;
-    height: auto;
+    width: 72px; /* slightly larger on mobile for readability */
   }
 
   .site-title h1 {
@@ -70,23 +115,14 @@
   .site-parent {
     font-size: 13px;
   }
-
-  .site-nav {
-    margin-top: 12px;
-    text-align: center;
-  }
-
-  .site-nav a {
-    margin: 0 8px;
-    display: inline-block;
-  }
 }
   </style>
 </head>
 
 <body>
   <div class="container">
-<!-- Header -->
+
+    <!-- Header -->
     <header class="site-header">
       <div class="branding">
         <img
@@ -101,6 +137,7 @@
           </p>
         </div>
       </div>
+
       
     <nav>
       <a href="/terrycolepodcaststudio/">Home</a> ·
