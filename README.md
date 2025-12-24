@@ -2,34 +2,41 @@
   body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
                  Roboto, Helvetica, Arial, sans-serif;
-    line-height: 1.6;
+    line-height: 1.65;
     max-width: 900px;
     margin: auto;
-    padding: 1rem;
+    padding: 1.25rem;
+    color: #222;
   }
 
   h1 {
-    font-size: 2rem;
-    margin-top: 1.5rem;
+    font-size: 2.1rem;
+    border-bottom: 3px solid #990000;
+    padding-bottom: 0.25rem;
   }
 
   h2 {
-    font-size: 1.4rem;
-    margin-top: 2rem;
+    font-size: 1.45rem;
+    margin-top: 2.25rem;
+    color: #990000;
   }
 
-  iframe {
-    margin-top: 0.75rem;
-    margin-bottom: 1.25rem;
+  .callout {
+    background: #f7f7f7;
+    border-left: 5px solid #990000;
+    padding: 1rem 1.25rem;
+    margin: 1.5rem 0;
   }
 
   hr {
-    margin: 2rem 0;
+    margin: 2.75rem 0;
   }
 </style>
-[Home](/terrycolepodcaststudio/) •
-[About](/terrycolepodcaststudio/about) •
-[Shows](/terrycolepodcaststudio/shows) •
+
+***Navigation:**  
+[Home](/terrycolepodcaststudio/) ·
+[About](/terrycolepodcaststudio/about) ·
+[Shows](/terrycolepodcaststudio/shows) ·
 [Contact](/terrycolepodcaststudio/contact)
 
 ---
@@ -38,21 +45,23 @@
 
 Part of the **Terry Cole Broadcast & Recording Studio**.
 
-The Terry Cole Podcast Studio is dedicated to preserving and sharing the legacy of broadcaster Terry Cole through podcasts, recorded audio projects, and archival storytelling.
+The Terry Cole Podcast Studio is dedicated to preserving broadcast history while producing meaningful audio projects rooted in storytelling, legacy, and community voices.
 
-Based in Ohio, the studio serves as a home for meaningful conversations, historical audio, and voices worth remembering.
-
----
-
-🎙️ **Listen & Learn**
-- Podcasts honoring broadcast history
-- Archival audio projects
-- Special recordings and tributes
-
-📡 **Connect**
-Website: https://terrycolepodcaststudio.com  
-Email: bhamblin@terrycolepodcaststudio.com  
+<div class="callout">
+The studio serves as the audio home of the Terry Cole Broadcast & Recording Studio — honoring the past while supporting new recorded works.
+</div>
 
 ---
 
-*Broadcast legacy. Recorded with care.*
+## Explore the Studio
+
+- 🎙️ Flagship archival series and preserved broadcasts  
+- 🎧 Ongoing institutional and community podcasts  
+- 🎚️ Original studio productions and collaborations  
+
+Visit the **Shows** page to listen.
+
+---
+
+© Terry Cole Podcast Studio  
+Part of the Terry Cole Broadcast & Recording Studio
