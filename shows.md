@@ -68,7 +68,13 @@ A conversational podcast covering favorites, rankings, and pop culture topics.
 ## 🎙️ The Andy & Brendon Podcast
 Conversations, commentary, and collaborative discussions.
 
-<!-- PASTE SPOKER SHOW EMBED HERE -->
+<iframe
+  src="https://widget.spreaker.com/player?show_id=4580634&theme=light&playlist=show&playlist-continuous=false&chapters-image=true&episode_image_position=left&hide-logo=true&hide-likes=true&hide-comments=true&hide-sharing=true&hide-download=true"
+  width="100%"
+  height="350"
+  title="The Andy & Brendon Podcast"
+  frameborder="0">
+</iframe>
 
 ---
 
