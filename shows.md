@@ -55,7 +55,13 @@ Independent audio projects, recordings, and special productions.
 ## 🎤 Andy & Steph’s Top Ten Podcast
 A conversational podcast covering favorites, rankings, and pop culture topics.
 
-<!-- PASTE SPOKER SHOW EMBED HERE -->
+<iframe
+  src="https://widget.spreaker.com/player?show_id=5020228&theme=light&playlist=show&playlist-continuous=false&chapters-image=true&episode_image_position=left&hide-logo=true&hide-likes=true&hide-comments=true&hide-sharing=true&hide-download=true"
+  width="100%"
+  height="350"
+  title="Andy & Steph's Top Ten Podcast"
+  frameborder="0">
+</iframe>
 
 ---
 
