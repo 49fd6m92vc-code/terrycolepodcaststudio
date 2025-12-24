@@ -27,9 +27,10 @@
     margin: 2rem 0;
   }
 </style>
-[Home](/terrycolepodcaststudio/) •
-[About](/terrycolepodcaststudio/about) •
-[Shows](/terrycolepodcaststudio/shows) •
+**Navigation:**  
+[Home](/terrycolepodcaststudio/) ·
+[About](/terrycolepodcaststudio/about) ·
+[Shows](/terrycolepodcaststudio/shows) ·
 [Contact](/terrycolepodcaststudio/contact)
 
 ---
