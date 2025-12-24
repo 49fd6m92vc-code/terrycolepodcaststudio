@@ -13,18 +13,17 @@ All programs are officially hosted on **Spreaker (from iHeart)** and are present
 
 ---
 
-### 🎙️ Terry Cole’s Audio Archives
+## 🎙️ Terry Cole’s Audio Archives
 
 Preserved broadcasts and historical audio recordings connected to Terry Cole’s career in radio.
 
 <iframe
-  src="https://www.iheart.com/podcast/53-terry-coles-audio-archives-102630732/episode/wnci-979-1753?app=listen&embed=true"
+  src="https://widget.spreaker.com/player?show_id=5365299&theme=light&playlist=show&playlist-continuous=true&chapters-image=true"
   width="100%"
-  height="200"
+  height="400"
   frameborder="0"
-  allow="autoplay">
+  allowfullscreen>
 </iframe>
-
 ---
 
 ## 🎧 OSSB Inside and Out
