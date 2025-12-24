@@ -42,7 +42,13 @@ A podcast exploring the people, stories, and community of the Ohio State School 
 ## 🎚️ Brendon Hamblin’s Audio Projects
 Independent audio projects, recordings, and special productions.
 
-<!-- PASTE SPOKER SHOW EMBED HERE -->
+<iframe
+  src="https://widget.spreaker.com/player?show_id=4664315&theme=light&playlist=show&playlist-continuous=false&chapters-image=true&episode_image_position=left&hide-logo=true&hide-likes=true&hide-comments=true&hide-sharing=true&hide-download=true"
+  width="100%"
+  height="350"
+  title="Brendon Hamblin's Audio Projects"
+  frameborder="0">
+</iframe>
 
 ---
 
