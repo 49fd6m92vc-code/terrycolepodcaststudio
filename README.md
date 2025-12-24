@@ -33,7 +33,7 @@
   }
 </style>
 
-***Navigation:**  
+**Navigation:**  
 [Home](/terrycolepodcaststudio/) ·
 [About](/terrycolepodcaststudio/about) ·
 [Shows](/terrycolepodcaststudio/shows) ·
