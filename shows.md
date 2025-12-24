@@ -18,11 +18,11 @@ All programs are officially hosted on **Spreaker (from iHeart)** and are present
 Preserved broadcasts and historical audio recordings connected to Terry Cole’s career in radio.
 
 <iframe
-  src="https://widget.spreaker.com/player?show_id=5365299&theme=light&playlist=show&playlist-continuous=true&chapters-image=true"
+  src="https://widget.spreaker.com/player?show_id=5365299&theme=light&playlist=show&playlist-continuous=false&chapters-image=true&episode_image_position=left&hide-logo=true&hide-likes=true&hide-comments=true&hide-sharing=true&hide-download=true"
   width="100%"
-  height="400"
-  frameborder="0"
-  allowfullscreen>
+  height="350"
+  title="Terry Cole's Audio Archives"
+  frameborder="0">
 </iframe>
 ---
 
