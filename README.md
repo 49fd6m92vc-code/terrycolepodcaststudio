@@ -1,3 +1,10 @@
+[Home](/terrycolepodcaststudio/) •
+[Shows](/terrycolepodcaststudio/shows) •
+[About](/terrycolepodcaststudio/about) •
+[Contact](/terrycolepodcaststudio/contact)
+
+---
+
 # Terry Cole Podcast Studio
 
 Part of the **Terry Cole Broadcast & Recording Studio**.
@@ -20,3 +27,5 @@ Email: bhamblin@terrycolepodcaststudio.com
 ---
 
 *Broadcast legacy. Recorded with care.*
+
+<iframe allow="autoplay" width="100%" height="200" src="https://www.iheart.com/podcast/53-terry-coles-audio-archives-102630732/episode/wnci-979-1753?app=listen&embed=true" frameborder="0"></iframe>
