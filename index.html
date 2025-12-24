@@ -2,91 +2,99 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Terry Cole Podcast Studio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <style>
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
-                   Roboto, Helvetica, Arial, sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
       margin: 0;
       background: #ffffff;
       color: #111;
-      line-height: 1.65;
+      line-height: 1.6;
     }
 
     .container {
       max-width: 900px;
       margin: 0 auto;
-      padding: 40px 24px;
+      padding: 32px 24px;
     }
 
-    nav {
-      font-size: 0.95rem;
-      margin-bottom: 36px;
+    /* Header */
+    .site-header {
+      margin-bottom: 40px;
     }
 
-    nav a {
+    .branding {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 12px;
+    }
+
+    .site-logo {
+      width: 56px;
+      height: auto;
+    }
+
+    .site-title h1 {
+      margin: 0;
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    .site-parent {
+      margin: 2px 0 0;
+      font-size: 14px;
+      color: #555;
+    }
+
+    /* Navigation */
+    .site-nav a {
       text-decoration: none;
       color: #555;
-      margin-right: 12px;
+      margin-right: 14px;
+      font-size: 15px;
     }
 
-    nav a.active {
+    .site-nav a.active {
       color: #8b0000;
       font-weight: 600;
     }
 
-    h1 {
-      font-size: 2.2rem;
-      margin-bottom: 6px;
-    }
-
-    .subtitle {
-      font-size: 0.95rem;
-      color: #555;
-      margin-bottom: 18px;
+    /* Headings */
+    h2 {
+      font-size: 28px;
+      margin-top: 0;
     }
 
     .rule {
       border-bottom: 3px solid #8b0000;
-      margin: 18px 0 32px;
+      margin: 12px 0 24px;
     }
 
-    p {
-      max-width: 760px;
-    }
-
+    /* Callout */
     .callout {
+      border-left: 4px solid #8b0000;
       background: #f7f7f7;
-      border-left: 5px solid #8b0000;
-      padding: 22px 26px;
-      margin: 40px 0;
+      padding: 16px 20px;
+      margin: 32px 0;
     }
 
-    h2 {
-      font-size: 1.35rem;
-      color: #8b0000;
-      margin-top: 44px;
-    }
-
+    /* Lists */
     ul {
-      padding-left: 22px;
-      margin-top: 14px;
+      padding-left: 20px;
     }
 
-.logo {
-  height: 64px;
-  max-height: 64px;
-  width: auto;
-  display: block;
-}
+    li {
+      margin-bottom: 8px;
+    }
 
     footer {
-      margin-top: 70px;
+      margin-top: 60px;
       padding-top: 20px;
       border-top: 1px solid #ccc;
-      font-size: 0.85rem;
+      font-size: 14px;
       color: #555;
     }
   </style>
@@ -95,85 +103,77 @@
 <body>
   <div class="container">
 
+    <!-- Header -->
     <header class="site-header">
-  <div class="nav-container">
-
-    <div class="brand">
-      <img
+      <div class="branding">
+        img
   src="/terrycolepodcaststudio/B61D4C48-ABBD-4DDF-BF72-FB14FDD7C294.jpeg"
   alt="Terry Cole Podcast Studio logo"
   class="logo"
 />
-      <span class="brand-name">Terry Cole Podcast Studio</span>
-    </div>
+        <div class="site-title">
+          <h1>Terry Cole Podcast Studio</h1>
+          <p class="site-parent">
+            Part of the Terry Cole Broadcast &amp; Recording Studio
+          </p>
+        </div>
+      </div>
 
-    <nav class="nav-links">
-      <a href="/terrycolepodcaststudio/" class="active">Home</a>
-      <a href="/terrycolepodcaststudio/about.html">About</a>
-      <a href="/terrycolepodcaststudio/shows.html">Shows</a>
-      <a href="/terrycolepodcaststudio/contact.html">Contact</a>
-    </nav>
+      <nav class="site-nav">
+        <a href="/terrycolepodcaststudio/" class="active">Home</a>
+        <a href="/terrycolepodcaststudio/about.html">About</a>
+        <a href="/terrycolepodcaststudio/shows.html">Shows</a>
+        <a href="/terrycolepodcaststudio/contact.html">Contact</a>
+      </nav>
+    </header>
 
-  </div>
-</header>
+    <!-- Main Content -->
+    <main>
+      <h2>Preserving Broadcast Legacy</h2>
+      <div class="rule"></div>
 
-    <h1>Terry Cole Podcast Studio</h1>
-    <div class="subtitle">
-      Part of the <strong>Terry Cole Broadcast &amp; Recording Studio</strong>.
-    </div>
+      <p>
+        The Terry Cole Podcast Studio is dedicated to preserving and sharing the
+        legacy of broadcaster Terry Cole through podcasts, recorded audio
+        projects, and archival storytelling.
+      </p>
 
-    <div class="rule"></div>
+      <p>
+        Rooted in broadcast history and based in Ohio, the studio serves as a
+        home for meaningful conversations, historical audio, and voices worth
+        remembering.
+      </p>
 
-    <!-- Intro -->
-    <p>
-      The Terry Cole Podcast Studio is dedicated to preserving and sharing the legacy of broadcaster Terry Cole through podcasts, recorded audio projects, and archival storytelling.
-    </p>
+      <p>
+        The studio also functions as the audio home of the Terry Cole Broadcast
+        &amp; Recording Studio — honoring the past while supporting new recorded
+        works rooted in storytelling, legacy, and community voices.
+      </p>
 
-    <p>
-      Rooted in broadcast history and based in Ohio, the studio serves as a home for meaningful conversations, historical audio, and voices worth remembering.
-    </p>
+      <div class="callout">
+        <strong>🎙️ Listen &amp; Learn</strong>
+        <ul>
+          <li>Podcasts honoring broadcast history</li>
+          <li>Archival audio projects</li>
+          <li>Special recordings and tributes</li>
+        </ul>
+      </div>
 
-    <p>
-      The studio also functions as the audio home of the Terry Cole Broadcast &amp; Recording Studio — honoring the past while supporting new recorded works rooted in storytelling, legacy, and community voices.
-    </p>
-
-    <!-- Listen & Learn -->
-    <div class="callout">
-      <h2>🎙️ Listen &amp; Learn</h2>
+      <h3>Explore the Studio</h3>
       <ul>
-        <li>Podcasts honoring broadcast history</li>
-        <li>Archival audio projects</li>
-        <li>Special recordings and tributes</li>
+        <li>🎙️ Flagship archival series and preserved broadcasts</li>
+        <li>🎧 Ongoing institutional and community podcasts</li>
+        <li>🎚️ Original studio productions and collaborations</li>
       </ul>
-    </div>
 
-    <!-- Explore -->
-    <h2>Explore the Studio</h2>
-    <ul>
-      <li>🎙️ Flagship archival series and preserved broadcasts</li>
-      <li>🎧 Ongoing institutional and community podcasts</li>
-      <li>🎚️ Original studio productions and collaborations</li>
-    </ul>
-
-    <p>
-      Visit the <strong><a href="/terrycolepodcaststudio/shows.html">Shows</a></strong> page to listen.
-    </p>
-
-    <!-- Connect -->
-    <h2>📡 Connect</h2>
-    <p>
-      Website:
-      <a href="https://terrycolepodcaststudio.com">terrycolepodcaststudio.com</a><br>
-      Email:
-      <a href="mailto:bhamblin@terrycolepodcaststudio.com">
-        bhamblin@terrycolepodcaststudio.com
-      </a>
-    </p>
+      <p>
+        Visit the <strong>Shows</strong> page to listen.
+      </p>
+    </main>
 
     <!-- Footer -->
     <footer>
-      <em>Broadcast legacy. Recorded with care.</em><br><br>
-      © Terry Cole Podcast Studio<br>
+      © Terry Cole Podcast Studio<br />
       Part of the Terry Cole Broadcast &amp; Recording Studio
     </footer>
 
