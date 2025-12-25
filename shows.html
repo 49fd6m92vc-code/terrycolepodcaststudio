@@ -9,15 +9,18 @@
   <meta property="og:type" content="website">
   <meta property="og:title" content="Shows · Terry Cole Podcast Studio">
   <meta property="og:description" content="Listen to podcasts and audio projects produced by the Terry Cole Podcast Studio, hosted on iHeart and presented with embedded playback.">
-  <meta property="og:image" content="https://49fd6m92vc-code.github.io/4635E4AE-C198-45AF-A819-AF3E175E4EAF.png">
-  <meta property="og:url" content="https://49fd6m92vc-code.github.io/shows.html">
+  <meta property="og:image" content="https://terrycolepodcaststudio.com/og-image.png">
+  <meta property="og:url" content="https://terrycolepodcaststudio.com/shows.html">
   <meta property="og:site_name" content="Terry Cole Podcast Studio">
 
   <!-- Twitter / X -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Shows · Terry Cole Podcast Studio">
   <meta name="twitter:description" content="Listen to podcasts and audio projects produced by the Terry Cole Podcast Studio, hosted on iHeart and presented with embedded playback.">
-  <meta name="twitter:image" content="https://49fd6m92vc-code.github.io/4635E4AE-C198-45AF-A819-AF3E175E4EAF.png">
+  <meta name="twitter:image" content="https://terrycolepodcaststudio.com/og-image.png">
+
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.ico">
 
   <style>
     body {
@@ -35,7 +38,7 @@
       padding: 32px 24px;
     }
 
-    /* ===== HEADER (EXACT HOMEPAGE COPY) ===== */
+    /* ===== HEADER ===== */
     .site-header {
       margin-bottom: 40px;
     }
@@ -80,6 +83,12 @@
     h2 {
       font-size: 28px;
       margin-top: 0;
+    }
+
+    h3.section-heading {
+      margin-top: 48px;
+      font-size: 22px;
+      color: #8b0000;
     }
 
     .rule {
@@ -162,13 +171,15 @@
   <!-- ===== HEADER ===== -->
   <header class="site-header">
     <div class="branding">
-      <img
-        src="/logo.jpg"
-        alt="Terry Cole Podcast Studio logo"
-        class="site-logo"
-      />
+      <a href="/" aria-label="Return to homepage">
+        <img
+          src="/logo.jpg"
+          alt="Terry Cole Podcast Studio logo"
+          class="site-logo"
+        />
+      </a>
       <div class="site-title">
-        <h1>Terry Cole Podcast Studio</h1>
+        <h1><a href="/" style="text-decoration:none; color:inherit;">Terry Cole Podcast Studio</a></h1>
         <p class="site-parent">
           Part of the Terry Cole Broadcast &amp; Recording Studio
         </p>
@@ -183,7 +194,7 @@
     </nav>
   </header>
 
-  <!-- ===== MAIN ===== -->
+  <!-- ===== MAIN CONTENT ===== -->
   <main>
     <h2>Shows &amp; Audio Projects</h2>
     <div class="rule"></div>
@@ -198,6 +209,9 @@
       here for direct listening.
     </p>
 
+    <!-- ===== ARCHIVE & LEGACY ===== -->
+    <h3 class="section-heading">Archive &amp; Legacy Programming</h3>
+
     <div class="show">
       <h3>🎙️ Terry Cole’s Audio Archives</h3>
       <div class="listen-links">
@@ -207,6 +221,9 @@
       <iframe src="https://widget.spreaker.com/player?show_id=5365299&theme=light&playlist=show&hide-logo=true"
               width="100%" height="350"></iframe>
     </div>
+
+    <!-- ===== STUDIO PRODUCTIONS ===== -->
+    <h3 class="section-heading">Studio Productions</h3>
 
     <div class="show">
       <h3>🎧 OSSB Inside and Out</h3>
