@@ -21,25 +21,44 @@
       padding: 40px 24px;
     }
 
-    /* 🔧 FIX: force nav to match homepage (LEFT aligned) */
-    nav {
-      font-size: 0.95rem;
-      margin-bottom: 36px;
-      text-align: left;
+    /* ===== HEADER (IDENTICAL TO HOMEPAGE) ===== */
+    .site-header {
+      text-align: center;
+      padding: 32px 24px 20px;
     }
 
-    nav a {
+    .site-header img {
+      width: 90px;
+      height: auto;
+      margin-bottom: 12px;
+    }
+
+    .site-header h1 {
+      margin: 0;
+      font-size: 28px;
+      font-weight: 700;
+    }
+
+    .site-header p {
+      margin: 6px 0 14px;
+      font-size: 15px;
+      color: #555;
+    }
+
+    .site-nav a {
       text-decoration: none;
       color: #555;
-      margin-right: 12px;
+      margin: 0 10px;
+      font-size: 16px;
     }
 
-    nav a.active {
+    .site-nav a.active {
       color: #8b0000;
       font-weight: 600;
     }
 
-    h1 {
+    /* ===== PAGE CONTENT ===== */
+    h2 {
       font-size: 2.2rem;
       margin-bottom: 6px;
     }
@@ -71,52 +90,57 @@
 </head>
 
 <body>
-  <div class="container">
 
-    <!-- Navigation -->
-    <nav>
-      <a href="/terrycolepodcaststudio/">Home</a> ·
-      <a class="active" href="/terrycolepodcaststudio/about.html">About</a> ·
-      <a href="/terrycolepodcaststudio/shows.html">Shows</a> ·
+  <!-- ===== HEADER (MATCHES HOMEPAGE EXACTLY) ===== -->
+  <header class="site-header">
+    <img
+      src="/terrycolepodcaststudio/B61D4C48-ABBD-4DDF-BF72-FB14FDD7C294.jpeg"
+      alt="The Terry Cole Broadcast & Recording Studio logo"
+    />
+
+    <h1>Terry Cole Podcast Studio</h1>
+    <p>Part of the Terry Cole Broadcast &amp; Recording Studio</p>
+
+    <nav class="site-nav">
+      <a href="/terrycolepodcaststudio/">Home</a>
+      <a href="/terrycolepodcaststudio/about.html" class="active">About</a>
+      <a href="/terrycolepodcaststudio/shows.html">Our Shows</a>
       <a href="/terrycolepodcaststudio/contact.html">Contact</a>
     </nav>
+  </header>
 
-    <!-- Page Header -->
-    <h1>About the Studio</h1>
+  <!-- ===== PAGE CONTENT ===== -->
+  <div class="container">
+
+    <h2>About the Studio</h2>
     <div class="rule"></div>
 
     <p>
-      The <strong>Terry Cole Podcast Studio</strong> is part of the Terry Cole
-      Broadcast &amp; Recording Studio, created to preserve, share, and continue
-      a legacy rooted in radio, storytelling, and community service.
+      The <strong>Terry Cole Podcast Studio</strong> is part of the Terry Cole Broadcast &amp; Recording Studio,
+      created to preserve, share, and continue a legacy rooted in radio, storytelling, and community service.
     </p>
 
     <p>
-      Named in honor of broadcaster Terry Cole, the studio serves as both an
-      archival space and a living production environment — connecting past
-      broadcasts with new voices and contemporary audio projects.
+      Named in honor of broadcaster Terry Cole, the studio serves as both an archival space and a living
+      production environment — connecting past broadcasts with new voices and contemporary audio projects.
     </p>
 
     <p>
-      The Terry Cole Podcast Studio is dedicated to preserving and sharing the
-      legacy of broadcaster Terry Cole through podcasts, recorded audio projects,
-      and archival storytelling. Based in Ohio, the studio serves as a home for
-      meaningful conversations, historical audio, and voices worth remembering.
+      The Terry Cole Podcast Studio is dedicated to preserving and sharing the legacy of broadcaster Terry Cole
+      through podcasts, recorded audio projects, and archival storytelling. Based in Ohio, the studio serves as
+      a home for meaningful conversations, historical audio, and voices worth remembering.
     </p>
 
     <div class="callout">
-      This studio exists to ensure meaningful voices, local history, and
-      broadcast craftsmanship are preserved with care and intention — honoring
-      the past while supporting new recorded works.
+      This studio exists to ensure meaningful voices, local history, and broadcast craftsmanship are preserved
+      with care and intention — honoring the past while supporting new recorded works.
     </div>
 
     <p>
-      In addition to archival work, the studio supports podcasts and recorded
-      projects from community members, institutions, and collaborators who share
-      a commitment to thoughtful, purpose-driven audio.
+      In addition to archival work, the studio supports podcasts and recorded projects from community members,
+      institutions, and collaborators who share a commitment to thoughtful, purpose-driven audio.
     </p>
 
-    <!-- Footer -->
     <footer>
       <em>Broadcast legacy. Recorded with care.</em><br><br>
       © Terry Cole Podcast Studio<br>
