@@ -18,34 +18,54 @@
     .container {
       max-width: 900px;
       margin: 0 auto;
-      padding: 40px 24px;
+      padding: 32px 24px;
     }
 
-    nav {
-      font-size: 0.95rem;
-      margin-bottom: 36px;
+    /* ===== HEADER / NAV — SAME AS HOMEPAGE ===== */
+    .site-header {
+      margin-bottom: 40px;
     }
 
-    nav a {
+    .branding {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 12px;
+    }
+
+    .site-logo {
+      width: 64px;
+      height: auto;
+    }
+
+    .site-title h1 {
+      margin: 0;
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    .site-parent {
+      margin: 2px 0 0;
+      font-size: 14px;
+      color: #555;
+    }
+
+    .site-nav a {
       text-decoration: none;
       color: #555;
-      margin-right: 12px;
+      margin-right: 14px;
+      font-size: 15px;
     }
 
-    nav a.active {
+    .site-nav a.active {
       color: #8b0000;
       font-weight: 600;
     }
 
-    h1 {
+    /* ===== PAGE CONTENT ===== */
+    h2 {
       font-size: 2.2rem;
       margin-bottom: 6px;
-    }
-
-    .subtitle {
-      font-size: 0.95rem;
-      color: #555;
-      margin-bottom: 18px;
     }
 
     .rule {
@@ -61,7 +81,7 @@
       margin-bottom: 56px;
     }
 
-    .show h2 {
+    .show h3 {
       color: #8b0000;
       margin-bottom: 10px;
       font-size: 1.35rem;
@@ -86,22 +106,61 @@
       font-size: 0.85rem;
       color: #555;
     }
+
+    /* ===== MOBILE ===== */
+    @media (max-width: 640px) {
+      .branding {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 8px;
+      }
+
+      .site-logo {
+        width: 72px;
+      }
+
+      .site-title h1 {
+        font-size: 18px;
+      }
+
+      .site-parent {
+        font-size: 13px;
+      }
+    }
   </style>
 </head>
 
 <body>
-  <div class="container">
+<div class="container">
 
-    <!-- Navigation -->
-    <nav>
-      <a href="/terrycolepodcaststudio/">Home</a> ·
-      <a href="/terrycolepodcaststudio/about.html">About</a> ·
-      <a class="active" href="/terrycolepodcaststudio/shows.html">Shows</a> ·
+  <!-- ===== HEADER / NAV ===== -->
+  <header class="site-header">
+    <div class="branding">
+      <img
+        src="/terrycolepodcaststudio/B61D4C48-ABBD-4DDF-BF72-FB14FDD7C294.jpeg"
+        alt="Terry Cole Podcast Studio logo"
+        class="site-logo"
+      />
+      <div class="site-title">
+        <h1>Terry Cole Podcast Studio</h1>
+        <p class="site-parent">
+          Part of the Terry Cole Broadcast &amp; Recording Studio
+        </p>
+      </div>
+    </div>
+
+    <nav class="site-nav">
+      <a href="/terrycolepodcaststudio/">Home</a>
+      <a href="/terrycolepodcaststudio/about.html">About</a>
+      <a href="/terrycolepodcaststudio/shows.html" class="active">Shows</a>
       <a href="/terrycolepodcaststudio/contact.html">Contact</a>
     </nav>
+  </header>
 
-    <!-- Page Header -->
-    <h1>Shows &amp; Audio Projects</h1>
+  <!-- ===== PAGE CONTENT ===== -->
+  <main>
+    <h2>Shows &amp; Audio Projects</h2>
     <div class="rule"></div>
 
     <p>
@@ -114,69 +173,36 @@
       here for direct listening.
     </p>
 
-    <!-- Shows -->
-
     <div class="show">
-      <h2>🎙️ Terry Cole’s Audio Archives</h2>
-      <p>
-        Preserved broadcasts and historical audio recordings connected to Terry Cole’s career in radio.
-      </p>
-      <iframe
-        src="https://widget.spreaker.com/player?show_id=5365299&theme=light&playlist=show&hide-logo=true&hide-likes=true&hide-comments=true&hide-sharing=true&hide-download=true"
-        width="100%"
-        height="350">
-      </iframe>
+      <h3>🎙️ Terry Cole’s Audio Archives</h3>
+      <p>Preserved broadcasts and historical audio recordings connected to Terry Cole’s career in radio.</p>
+      <iframe src="https://widget.spreaker.com/player?show_id=5365299&theme=light&playlist=show&hide-logo=true&hide-likes=true&hide-comments=true&hide-sharing=true&hide-download=true" width="100%" height="350"></iframe>
     </div>
 
     <div class="show">
-      <h2>🎧 OSSB Inside and Out</h2>
-      <p>
-        A podcast exploring the people, stories, and community of the Ohio State School for the Blind.
-      </p>
-      <iframe
-        src="https://widget.spreaker.com/player?show_id=4120454&theme=light&playlist=show&hide-logo=true"
-        width="100%"
-        height="350">
-      </iframe>
+      <h3>🎧 OSSB Inside and Out</h3>
+      <p>A podcast exploring the people, stories, and community of the Ohio State School for the Blind.</p>
+      <iframe src="https://widget.spreaker.com/player?show_id=4120454&theme=light&playlist=show&hide-logo=true" width="100%" height="350"></iframe>
     </div>
 
     <div class="show">
-      <h2>🎚️ Brendon Hamblin’s Audio Projects</h2>
-      <p>
-        Independent audio projects, recordings, and special productions.
-      </p>
-      <iframe
-        src="https://widget.spreaker.com/player?show_id=4664315&theme=light&playlist=show&hide-logo=true"
-        width="100%"
-        height="350">
-      </iframe>
+      <h3>🎚️ Brendon Hamblin’s Audio Projects</h3>
+      <p>Independent audio projects, recordings, and special productions.</p>
+      <iframe src="https://widget.spreaker.com/player?show_id=4664315&theme=light&playlist=show&hide-logo=true" width="100%" height="350"></iframe>
     </div>
 
     <div class="show">
-      <h2>🎤 Andy &amp; Steph’s Top Ten Podcast</h2>
-      <p>
-        A conversational podcast covering favorites, rankings, and pop culture topics.
-      </p>
-      <iframe
-        src="https://widget.spreaker.com/player?show_id=5020228&theme=light&playlist=show&hide-logo=true"
-        width="100%"
-        height="350">
-      </iframe>
+      <h3>🎤 Andy &amp; Steph’s Top Ten Podcast</h3>
+      <p>A conversational podcast covering favorites, rankings, and pop culture topics.</p>
+      <iframe src="https://widget.spreaker.com/player?show_id=5020228&theme=light&playlist=show&hide-logo=true" width="100%" height="350"></iframe>
     </div>
 
     <div class="show">
-      <h2>🎙️ The Andy &amp; Brendon Podcast</h2>
-      <p>
-        Conversations, commentary, and collaborative discussions.
-      </p>
-      <iframe
-        src="https://widget.spreaker.com/player?show_id=4580634&theme=light&playlist=show&hide-logo=true"
-        width="100%"
-        height="350">
-      </iframe>
+      <h3>🎙️ The Andy &amp; Brendon Podcast</h3>
+      <p>Conversations, commentary, and collaborative discussions.</p>
+      <iframe src="https://widget.spreaker.com/player?show_id=4580634&theme=light&playlist=show&hide-logo=true" width="100%" height="350"></iframe>
     </div>
 
-    <!-- About Playback -->
     <div class="about-playback">
       <h3>About Playback</h3>
       <ul>
@@ -185,14 +211,15 @@
         <li>Hosting and distribution remain under the iHeart network</li>
       </ul>
     </div>
+  </main>
 
-    <!-- Footer -->
-    <footer>
-      <em>Broadcast legacy. Recorded with care.</em><br><br>
-      © Terry Cole Podcast Studio<br>
-      Part of the Terry Cole Broadcast &amp; Recording Studio
-    </footer>
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <em>Broadcast legacy. Recorded with care.</em><br><br>
+    © Terry Cole Podcast Studio<br>
+    Part of the Terry Cole Broadcast &amp; Recording Studio
+  </footer>
 
-  </div>
+</div>
 </body>
 </html>
