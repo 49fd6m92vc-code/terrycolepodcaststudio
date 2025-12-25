@@ -1,23 +1,24 @@
 /* =========================================================
    BROADCAST / INSTITUTIONAL VISUAL REFINEMENT
-   CSS-ONLY — SAFE TO DROP IN
+   REFINEMENT ONLY — BUILDS ON BASE STYLES
    ========================================================= */
+
 /* ================================
    HEADER POLISH — BROADCAST STYLE
    ================================ */
 
-/* Header container refinement */
+/* Header divider + breathing room */
 .site-header {
   padding-bottom: 12px;
   border-bottom: 1px solid #e4e4e4;
 }
 
-/* Branding alignment polish */
+/* Branding rhythm */
 .branding {
-  align-items: center;
+  margin-bottom: 16px;
 }
 
-/* Logo: slightly crisper presence */
+/* Logo presence (no size override here) */
 .site-logo {
   transition: opacity 0.15s ease-in-out;
 }
@@ -26,31 +27,35 @@
   opacity: 0.9;
 }
 
-/* Title: stronger broadcast authority */
+/* Title authority */
 .site-title h1 {
   letter-spacing: 0.02em;
 }
 
-/* Parent line: quieter, more refined */
+/* Parent line refinement */
 .site-parent {
-  letter-spacing: 0.03em;
   text-transform: uppercase;
+  letter-spacing: 0.06em;
   font-size: 12px;
+  color: #666;
 }
 
-/* Navigation spacing & rhythm */
+/* ================================
+   NAVIGATION — INSTITUTIONAL
+   ================================ */
+
 .site-nav {
   margin-top: 6px;
 }
 
-/* Nav links: cleaner broadcast feel */
 .site-nav a {
   position: relative;
   padding-bottom: 4px;
+  font-weight: 500;
   transition: color 0.15s ease-in-out;
 }
 
-/* Hover cue (very subtle underline) */
+/* Subtle underline cue */
 .site-nav a::after {
   content: "";
   position: absolute;
@@ -62,94 +67,45 @@
   transition: width 0.15s ease-in-out;
 }
 
-.site-nav a:hover::after {
-  width: 100%;
-}
-
-/* Active link: firm but not loud */
-.site-nav a.active {
-  letter-spacing: 0.02em;
-}
-
+.site-nav a:hover::after,
 .site-nav a.active::after {
   width: 100%;
 }
 
-/* Mobile header tightening */
-@media (max-width: 640px) {
-  .site-header {
-    padding-bottom: 8px;
-  }
-
-  .site-nav {
-    margin-top: 10px;
-  }
-}
-/* ---- Base Typography ---- */
-body {
-  font-size: 16px;
-  line-height: 1.65;
-  color: #111;
-}
-
-/* Improve text rendering */
-body, h1, h2, h3 {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-/* ---- Header Refinement ---- */
-.site-header {
-  margin-bottom: 48px;
-}
-
-.branding {
-  margin-bottom: 16px;
-}
-
-.site-logo {
-  width: 56px; /* quieter, more confident */
-}
-
-.site-title h1 {
-  font-size: 19px;
-  letter-spacing: -0.01em;
-}
-
-.site-parent {
-  font-size: 13px;
-  color: #666;
-}
-
-/* ---- Navigation: calmer, editorial ---- */
-.site-nav a {
-  font-weight: 500;
-  color: #666;
-}
-
 .site-nav a.active {
-  color: #8b0000;
-  font-weight: 600;
+  letter-spacing: 0.02em;
 }
 
-/* ---- Headings ---- */
+/* ================================
+   TYPOGRAPHY REFINEMENT
+   ================================ */
+
 h2 {
-  font-size: 26px;
   letter-spacing: -0.01em;
 }
 
 h3 {
-  font-size: 20px;
   letter-spacing: -0.01em;
 }
 
-/* ---- Section Rule ---- */
-.rule {
-  border-bottom-width: 2px;
-  margin: 14px 0 28px;
+/* Improve text rendering */
+body,
+h1,
+h2,
+h3 {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-/* ---- Show Blocks (Program Guide Feel) ---- */
+/* ================================
+   SECTION & CONTENT RHYTHM
+   ================================ */
+
+.rule {
+  border-bottom-width: 2px;
+}
+
+/* Program-guide feel for shows */
 .show {
   margin-bottom: 72px;
   padding-bottom: 28px;
@@ -162,10 +118,13 @@ h3 {
 }
 
 .show h3 {
-  margin-bottom: 4px;
+  margin-bottom: 6px;
 }
 
-/* ---- iHeart Badge ---- */
+/* ================================
+   BADGES & EMBEDS
+   ================================ */
+
 .listen-badge {
   margin: 10px 0 14px;
 }
@@ -175,21 +134,27 @@ h3 {
   opacity: 0.95;
 }
 
-/* ---- Embedded Player ---- */
 iframe {
   border-radius: 2px;
 }
 
-/* ---- Studio Divider (Institutional Tone) ---- */
+/* ================================
+   INSTITUTIONAL DIVIDERS
+   ================================ */
+
 .studio-divider {
   margin: 48px 0;
   font-size: 0.75rem;
   color: #777;
   letter-spacing: 0.08em;
   text-transform: uppercase;
+  text-align: center;
 }
 
-/* ---- Callouts & Playback Info ---- */
+/* ================================
+   CALLOUTS & INFO BOXES
+   ================================ */
+
 .callout,
 .about-playback {
   background: #f8f8f8;
@@ -201,7 +166,10 @@ iframe {
   margin-top: 0;
 }
 
-/* ---- Footer: more official, less casual ---- */
+/* ================================
+   FOOTER — OFFICIAL TONE
+   ================================ */
+
 footer {
   font-size: 13px;
   color: #666;
@@ -212,18 +180,17 @@ footer em {
   font-weight: 500;
 }
 
-/* ---- Mobile: preserve broadcast hierarchy ---- */
+/* ================================
+   MOBILE REFINEMENT
+   ================================ */
+
 @media (max-width: 640px) {
-  body {
-    font-size: 15.5px;
+  .site-header {
+    padding-bottom: 8px;
   }
 
-  h2 {
-    font-size: 24px;
-  }
-
-  h3 {
-    font-size: 19px;
+  .site-nav {
+    margin-top: 10px;
   }
 
   .show {
