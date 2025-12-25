@@ -12,111 +12,60 @@
       margin: 0;
       background: #ffffff;
       color: #111;
-      line-height: 1.6;
+      line-height: 1.65;
     }
 
     .container {
       max-width: 900px;
       margin: 0 auto;
-      padding: 32px 24px;
+      padding: 40px 24px;
     }
 
-    /* ===== HEADER (IDENTICAL TO HOMEPAGE) ===== */
-    .site-header {
-      margin-bottom: 40px;
-    }
-
-    .branding {
-      display: flex;
-      align-items: center;
-      gap: 16px;
-      margin-bottom: 12px;
-    }
-
-    .site-logo {
-      width: 64px;
-      height: auto;
-    }
-
-    .site-title h1 {
-      margin: 0;
-      font-size: 20px;
-      font-weight: 700;
-    }
-
-    .site-parent {
-      margin: 2px 0 0;
-      font-size: 14px;
-      color: #555;
-    }
-
-    /* NAV — LEFT ALIGNED (FIXED) */
-    .site-nav {
+    /* 🔧 FIX: force nav to match homepage (LEFT aligned) */
+    nav {
+      font-size: 0.95rem;
+      margin-bottom: 36px;
       text-align: left;
     }
 
-    .site-nav a {
+    nav a {
       text-decoration: none;
       color: #555;
-      margin-right: 14px;
-      font-size: 15px;
+      margin-right: 12px;
     }
 
-    .site-nav a.active {
+    nav a.active {
       color: #8b0000;
       font-weight: 600;
     }
 
-    /* ===== CONTENT ===== */
-    h2 {
-      font-size: 28px;
-      margin-top: 0;
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 6px;
     }
 
     .rule {
       border-bottom: 3px solid #8b0000;
-      margin: 12px 0 24px;
+      margin: 18px 0 32px;
+    }
+
+    p {
+      max-width: 760px;
     }
 
     .callout {
-      border-left: 4px solid #8b0000;
       background: #f7f7f7;
-      padding: 16px 20px;
-      margin: 32px 0;
+      border-left: 5px solid #8b0000;
+      padding: 22px 26px;
+      margin: 36px 0;
     }
 
     footer {
-      margin-top: 60px;
+      margin-top: 70px;
       padding-top: 20px;
       border-top: 1px solid #ccc;
-      font-size: 14px;
+      font-size: 0.85rem;
       color: #555;
-    }
-
-    /* ===== MOBILE — SAME AS HOMEPAGE ===== */
-    @media (max-width: 640px) {
-      .branding {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: 8px;
-      }
-
-      .site-logo {
-        width: 72px;
-      }
-
-      .site-title h1 {
-        font-size: 18px;
-      }
-
-      .site-parent {
-        font-size: 13px;
-      }
-
-      .site-nav {
-        text-align: center;
-      }
     }
   </style>
 </head>
@@ -124,68 +73,50 @@
 <body>
   <div class="container">
 
-    <!-- HEADER -->
-    <header class="site-header">
-      <div class="branding">
-        <img
-          src="/terrycolepodcaststudio/B61D4C48-ABBD-4DDF-BF72-FB14FDD7C294.jpeg"
-          alt="Terry Cole Podcast Studio logo"
-          class="site-logo"
-        />
-        <div class="site-title">
-          <h1>Terry Cole Podcast Studio</h1>
-          <p class="site-parent">
-            Part of the Terry Cole Broadcast &amp; Recording Studio
-          </p>
-        </div>
-      </div>
+    <!-- Navigation -->
+    <nav>
+      <a href="/terrycolepodcaststudio/">Home</a> ·
+      <a class="active" href="/terrycolepodcaststudio/about.html">About</a> ·
+      <a href="/terrycolepodcaststudio/shows.html">Shows</a> ·
+      <a href="/terrycolepodcaststudio/contact.html">Contact</a>
+    </nav>
 
-      <nav class="site-nav">
-        <a href="/terrycolepodcaststudio/">Home</a>
-        <a href="/terrycolepodcaststudio/about.html" class="active">About</a>
-        <a href="/terrycolepodcaststudio/shows.html">Shows</a>
-        <a href="/terrycolepodcaststudio/contact.html">Contact</a>
-      </nav>
-    </header>
+    <!-- Page Header -->
+    <h1>About the Studio</h1>
+    <div class="rule"></div>
 
-    <!-- CONTENT -->
-    <main>
-      <h2>About the Studio</h2>
-      <div class="rule"></div>
+    <p>
+      The <strong>Terry Cole Podcast Studio</strong> is part of the Terry Cole
+      Broadcast &amp; Recording Studio, created to preserve, share, and continue
+      a legacy rooted in radio, storytelling, and community service.
+    </p>
 
-      <p>
-        The <strong>Terry Cole Podcast Studio</strong> is part of the Terry Cole
-        Broadcast &amp; Recording Studio, created to preserve, share, and
-        continue a legacy rooted in radio, storytelling, and community service.
-      </p>
+    <p>
+      Named in honor of broadcaster Terry Cole, the studio serves as both an
+      archival space and a living production environment — connecting past
+      broadcasts with new voices and contemporary audio projects.
+    </p>
 
-      <p>
-        Named in honor of broadcaster Terry Cole, the studio serves as both an
-        archival space and a living production environment — connecting past
-        broadcasts with new voices and contemporary audio projects.
-      </p>
+    <p>
+      The Terry Cole Podcast Studio is dedicated to preserving and sharing the
+      legacy of broadcaster Terry Cole through podcasts, recorded audio projects,
+      and archival storytelling. Based in Ohio, the studio serves as a home for
+      meaningful conversations, historical audio, and voices worth remembering.
+    </p>
 
-      <p>
-        The Terry Cole Podcast Studio is dedicated to preserving and sharing the
-        legacy of broadcaster Terry Cole through podcasts, recorded audio
-        projects, and archival storytelling. Based in Ohio, the studio serves as
-        a home for meaningful conversations, historical audio, and voices worth
-        remembering.
-      </p>
+    <div class="callout">
+      This studio exists to ensure meaningful voices, local history, and
+      broadcast craftsmanship are preserved with care and intention — honoring
+      the past while supporting new recorded works.
+    </div>
 
-      <div class="callout">
-        This studio exists to ensure meaningful voices, local history, and
-        broadcast craftsmanship are preserved with care and intention — honoring
-        the past while supporting new recorded works.
-      </div>
+    <p>
+      In addition to archival work, the studio supports podcasts and recorded
+      projects from community members, institutions, and collaborators who share
+      a commitment to thoughtful, purpose-driven audio.
+    </p>
 
-      <p>
-        In addition to archival work, the studio supports podcasts and recorded
-        projects from community members, institutions, and collaborators who
-        share a commitment to thoughtful, purpose-driven audio.
-      </p>
-    </main>
-
+    <!-- Footer -->
     <footer>
       <em>Broadcast legacy. Recorded with care.</em><br><br>
       © Terry Cole Podcast Studio<br>
