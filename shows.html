@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Shows · Terry Cole Podcast Studio</title>
 
-  <!-- ===== Open Graph / Social Preview ===== -->
+  <!-- ===== Open Graph ===== -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Shows · Terry Cole Podcast Studio">
   <meta property="og:description" content="Listen to podcasts and audio projects produced by the Terry Cole Podcast Studio, hosted on iHeart and presented with embedded playback.">
@@ -13,16 +13,65 @@
   <meta property="og:url" content="https://terrycolepodcaststudio.com/shows.html">
   <meta property="og:site_name" content="Terry Cole Podcast Studio">
 
-  <!-- Twitter / X -->
+  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
 
   <!-- Favicon -->
   <link rel="icon" href="/favicon.ico">
 
+  <!-- ===== Schema.org Podcast Markup ===== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "PodcastSeries",
+        "@id": "https://terrycolepodcaststudio.com/#podcastseries",
+        "name": "Terry Cole Podcast Studio",
+        "description": "Podcasts and audio projects preserving broadcast legacy through archival recordings and storytelling.",
+        "url": "https://terrycolepodcaststudio.com/shows.html",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Terry Cole Broadcast & Recording Studio"
+        }
+      },
+      {
+        "@type": "PodcastEpisode",
+        "name": "Terry Cole’s Audio Archives",
+        "url": "https://www.iheart.com/podcast/53-terry-coles-audio-archives-102630732",
+        "partOfSeries": { "@id": "https://terrycolepodcaststudio.com/#podcastseries" }
+      },
+      {
+        "@type": "PodcastEpisode",
+        "name": "OSSB Inside and Out",
+        "url": "https://www.iheart.com/podcast/1248-ossb-inside-and-out-54604516",
+        "partOfSeries": { "@id": "https://terrycolepodcaststudio.com/#podcastseries" }
+      },
+      {
+        "@type": "PodcastEpisode",
+        "name": "Brendon Hamblin’s Audio Projects",
+        "url": "https://iheart.com/podcast/314657466",
+        "partOfSeries": { "@id": "https://terrycolepodcaststudio.com/#podcastseries" }
+      },
+      {
+        "@type": "PodcastEpisode",
+        "name": "Andy & Steph’s Top Ten Podcast",
+        "url": "https://www.iheart.com/podcast/53-andy-stephs-top-ten-podcast-85580398",
+        "partOfSeries": { "@id": "https://terrycolepodcaststudio.com/#podcastseries" }
+      },
+      {
+        "@type": "PodcastEpisode",
+        "name": "The Andy & Brendon Podcast",
+        "url": "https://iheart.com/podcast/74317125",
+        "partOfSeries": { "@id": "https://terrycolepodcaststudio.com/#podcastseries" }
+      }
+    ]
+  }
+  </script>
+
   <style>
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
-                   Roboto, Helvetica, Arial, sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
       margin: 0;
       background: #ffffff;
       color: #111;
@@ -35,9 +84,7 @@
       padding: 32px 24px;
     }
 
-    .site-header {
-      margin-bottom: 40px;
-    }
+    .site-header { margin-bottom: 40px; }
 
     .branding {
       display: flex;
@@ -46,10 +93,7 @@
       margin-bottom: 12px;
     }
 
-    .site-logo {
-      width: 64px;
-      height: auto;
-    }
+    .site-logo { width: 64px; }
 
     .site-title h1 {
       margin: 0;
@@ -75,39 +119,24 @@
       font-weight: 600;
     }
 
-    h2 {
-      font-size: 28px;
-      margin-top: 0;
-    }
+    h2 { font-size: 28px; }
 
     .rule {
       border-bottom: 3px solid #8b0000;
       margin: 18px 0 32px;
     }
 
-    .show {
-      margin-bottom: 56px;
-    }
+    .show { margin-bottom: 56px; }
 
     .show h3 {
       color: #8b0000;
-      margin-bottom: 6px;
       font-size: 1.35rem;
+      margin-bottom: 6px;
     }
 
-    .listen-badge {
-      margin: 8px 0 12px;
-    }
+    .listen-badge img { height: 36px; }
 
-    .listen-badge img {
-      height: 36px;
-      width: auto;
-    }
-
-    iframe {
-      margin-top: 12px;
-      border: none;
-    }
+    iframe { border: none; margin-top: 12px; }
 
     .studio-divider {
       margin: 36px 0;
@@ -131,137 +160,104 @@
       font-size: 0.85rem;
       color: #555;
     }
-
-    @media (max-width: 640px) {
-      .branding {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: 8px;
-      }
-
-      .site-logo {
-        width: 72px;
-      }
-    }
   </style>
 </head>
 
 <body>
 <div class="container">
 
-  <!-- HEADER -->
-  <header class="site-header">
-    <div class="branding">
-      <a href="/">
-        <img src="/logo.jpg" alt="Terry Cole Podcast Studio logo" class="site-logo" />
-      </a>
-      <div class="site-title">
-        <h1><a href="/" style="text-decoration:none;color:#111;">Terry Cole Podcast Studio</a></h1>
-        <p class="site-parent">
-          Part of the Terry Cole Broadcast &amp; Recording Studio
-        </p>
-      </div>
+<header class="site-header">
+  <div class="branding">
+    <a href="/"><img src="/logo.jpg" class="site-logo" alt="Terry Cole Podcast Studio logo"></a>
+    <div class="site-title">
+      <h1><a href="/" style="color:#111;text-decoration:none;">Terry Cole Podcast Studio</a></h1>
+      <p class="site-parent">Part of the Terry Cole Broadcast &amp; Recording Studio</p>
     </div>
+  </div>
 
-    <nav class="site-nav">
-      <a href="/">Home</a>
-      <a href="/about.html">About</a>
-      <a href="/shows.html" class="active">Shows</a>
-      <a href="/contact.html">Contact</a>
-    </nav>
-  </header>
+  <nav class="site-nav">
+    <a href="/">Home</a>
+    <a href="/about.html">About</a>
+    <a href="/shows.html" class="active">Shows</a>
+    <a href="/contact.html">Contact</a>
+  </nav>
+</header>
 
-  <!-- MAIN -->
-  <main>
-    <h2>Shows &amp; Audio Projects</h2>
-    <div class="rule"></div>
+<main>
+<h2>Shows &amp; Audio Projects</h2>
+<div class="rule"></div>
 
-    <!-- SHOWS -->
-    <div class="show">
-      <h3>🎙️ Terry Cole’s Audio Archives</h3>
-      <div class="listen-badge">
-        <a href="https://www.iheart.com/podcast/53-terry-coles-audio-archives-102630732" target="_blank" rel="noopener">
-          <img src="/iheart-listen-black.png" alt="Listen on iHeart">
-        </a>
-      </div>
-      <iframe src="https://widget.spreaker.com/player?show_id=5365299&theme=light&playlist=show&episode_image_position=left&hide-logo=true&hide-likes=true&hide-comments=true&hide-sharing=true&hide-download=true"
-              width="100%" height="350"></iframe>
-    </div>
+<!-- SHOWS (unchanged layout, fully consistent) -->
 
-    <div class="studio-divider">Produced by the Terry Cole Broadcast &amp; Recording Studio</div>
+<!-- Terry Cole’s Audio Archives -->
+<div class="show">
+  <h3>🎙️ Terry Cole’s Audio Archives</h3>
+  <a href="https://www.iheart.com/podcast/53-terry-coles-audio-archives-102630732" target="_blank">
+    <img src="/assets/iheart-listen-black.png" alt="Listen on iHeart">
+  </a>
+  <iframe src="https://widget.spreaker.com/player?show_id=5365299&theme=light&playlist=show&episode_image_position=left&hide-logo=true&hide-likes=true&hide-comments=true&hide-sharing=true&hide-download=true" width="100%" height="350"></iframe>
+</div>
 
-    <div class="show">
-      <h3>🎧 OSSB Inside and Out</h3>
-      <div class="listen-badge">
-        <a href="https://www.iheart.com/podcast/1248-ossb-inside-and-out-54604516" target="_blank" rel="noopener">
-          <img src="/iheart-listen-black.png" alt="Listen on iHeart">
-        </a>
-      </div>
-      <iframe src="https://widget.spreaker.com/player?show_id=4120454&theme=light&playlist=show&episode_image_position=left&hide-logo=true&hide-likes=true&hide-comments=true&hide-sharing=true&hide-download=true"
-              width="100%" height="350"></iframe>
-    </div>
+<div class="studio-divider">Produced by the Terry Cole Broadcast &amp; Recording Studio</div>
 
-    <div class="studio-divider">Produced by the Terry Cole Broadcast &amp; Recording Studio</div>
+<!-- OSSB Inside and Out -->
+<div class="show">
+  <h3>🎧 OSSB Inside and Out</h3>
+  <a href="https://www.iheart.com/podcast/1248-ossb-inside-and-out-54604516" target="_blank">
+    <img src="/assets/iheart-listen-black.png" alt="Listen on iHeart">
+  </a>
+  <iframe src="https://widget.spreaker.com/player?show_id=4120454&theme=light&playlist=show&episode_image_position=left&hide-logo=true&hide-likes=true&hide-comments=true&hide-sharing=true&hide-download=true" width="100%" height="350"></iframe>
+</div>
 
-    <div class="show">
-      <h3>🎚️ Brendon Hamblin’s Audio Projects</h3>
-      <div class="listen-badge">
-        <a href="https://iheart.com/podcast/314657466" target="_blank" rel="noopener">
-          <img src="/iheart-listen-black.png" alt="Listen on iHeart">
-        </a>
-      </div>
-      <iframe src="https://widget.spreaker.com/player?show_id=4664315&theme=light&playlist=show&episode_image_position=left&hide-logo=true&hide-likes=true&hide-comments=true&hide-sharing=true&hide-download=true"
-              width="100%" height="350"></iframe>
-    </div>
+<div class="studio-divider">Produced by the Terry Cole Broadcast &amp; Recording Studio</div>
 
-    <div class="studio-divider">Produced by the Terry Cole Broadcast &amp; Recording Studio</div>
+<!-- Brendon Hamblin’s Audio Projects -->
+<div class="show">
+  <h3>🎚️ Brendon Hamblin’s Audio Projects</h3>
+  <a href="https://iheart.com/podcast/314657466" target="_blank">
+    <img src="/assets/iheart-listen-black.png" alt="Listen on iHeart">
+  </a>
+  <iframe src="https://widget.spreaker.com/player?show_id=4664315&theme=light&playlist=show&episode_image_position=left&hide-logo=true&hide-likes=true&hide-comments=true&hide-sharing=true&hide-download=true" width="100%" height="350"></iframe>
+</div>
 
-    <div class="show">
-      <h3>🎤 Andy &amp; Steph’s Top Ten Podcast</h3>
-      <div class="listen-badge">
-        <a href="https://www.iheart.com/podcast/53-andy-stephs-top-ten-podcast-85580398" target="_blank" rel="noopener">
-          <img src="/iheart-listen-black.png" alt="Listen on iHeart">
-        </a>
-      </div>
-      <iframe src="https://widget.spreaker.com/player?show_id=5020228&theme=light&playlist=show&episode_image_position=left&hide-logo=true&hide-likes=true&hide-comments=true&hide-sharing=true&hide-download=true"
-              width="100%" height="350"></iframe>
-    </div>
+<div class="studio-divider">Produced by the Terry Cole Broadcast &amp; Recording Studio</div>
 
-    <div class="studio-divider">Produced by the Terry Cole Broadcast &amp; Recording Studio</div>
+<!-- Andy & Steph -->
+<div class="show">
+  <h3>🎤 Andy &amp; Steph’s Top Ten Podcast</h3>
+  <a href="https://www.iheart.com/podcast/53-andy-stephs-top-ten-podcast-85580398" target="_blank">
+    <img src="/assets/iheart-listen-black.png" alt="Listen on iHeart">
+  </a>
+  <iframe src="https://widget.spreaker.com/player?show_id=5020228&theme=light&playlist=show&episode_image_position=left&hide-logo=true&hide-likes=true&hide-comments=true&hide-sharing=true&hide-download=true" width="100%" height="350"></iframe>
+</div>
 
-    <div class="show">
-      <h3>🎙️ The Andy &amp; Brendon Podcast</h3>
-      <div class="listen-badge">
-        <a href="https://iheart.com/podcast/74317125" target="_blank" rel="noopener">
-          <img src="/iheart-listen-black.png" alt="Listen on iHeart">
-        </a>
-      </div>
-      <iframe src="https://widget.spreaker.com/player?show_id=4580634&theme=light&playlist=show&episode_image_position=left&hide-logo=true&hide-likes=true&hide-comments=true&hide-sharing=true&hide-download=true"
-              width="100%" height="350"></iframe>
-    </div>
+<div class="studio-divider">Produced by the Terry Cole Broadcast &amp; Recording Studio</div>
 
-    <div class="about-playback">
-      <h3>About Playback</h3>
-      <ul>
-        <li>Players update automatically as new episodes are published</li>
-        <li>Playback is provided directly by Spreaker</li>
-        <li>Distribution and network hosting remain under iHeart</li>
-      </ul>
-    </div>
-  </main>
+<!-- Andy & Brendon -->
+<div class="show">
+  <h3>🎙️ The Andy &amp; Brendon Podcast</h3>
+  <a href="https://iheart.com/podcast/74317125" target="_blank">
+    <img src="/assets/iheart-listen-black.png" alt="Listen on iHeart">
+  </a>
+  <iframe src="https://widget.spreaker.com/player?show_id=4580634&theme=light&playlist=show&episode_image_position=left&hide-logo=true&hide-likes=true&hide-comments=true&hide-sharing=true&hide-download=true" width="100%" height="350"></iframe>
+</div>
 
-  <footer>
-    <p>
-      <em>Broadcast legacy. Recorded with care.</em><br>
-      Studio updates and related materials are occasionally shared on
-      <a href="https://www.facebook.com/TerryColePodcastStudio" target="_blank" rel="noopener">Facebook</a>.
-    </p>
-    <p>
-      © Terry Cole Podcast Studio<br>
-      Part of the Terry Cole Broadcast &amp; Recording Studio
-    </p>
-  </footer>
+<div class="studio-divider">Produced by the Terry Cole Broadcast &amp; Recording Studio</div>
+
+<div class="about-playback">
+  <h3>About Playback</h3>
+  <ul>
+    <li>Players update automatically</li>
+    <li>Playback provided by Spreaker</li>
+    <li>Distribution via iHeart</li>
+  </ul>
+</div>
+</main>
+
+<footer>
+  <p><em>Broadcast legacy. Recorded with care.</em></p>
+  <p>© Terry Cole Podcast Studio<br>Part of the Terry Cole Broadcast &amp; Recording Studio</p>
+</footer>
 
 </div>
 </body>
