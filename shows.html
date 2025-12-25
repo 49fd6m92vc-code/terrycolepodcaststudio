@@ -8,7 +8,7 @@
   <!-- ===== Open Graph / Social Preview ===== -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Shows · Terry Cole Podcast Studio">
-  <meta property="og:description" content="Listen to podcasts and audio projects produced by the Terry Cole Podcast Studio, hosted on iHeart and presented with embedded playback.">
+  <meta property="og:description" content="Listen to podcasts and audio projects produced by the Terry Cole Podcast Studio.">
   <meta property="og:image" content="https://terrycolepodcaststudio.com/og-image.png">
   <meta property="og:url" content="https://terrycolepodcaststudio.com/shows.html">
   <meta property="og:site_name" content="Terry Cole Podcast Studio">
@@ -19,148 +19,23 @@
   <!-- Favicon -->
   <link rel="icon" href="/favicon.ico">
 
-  <!-- Broadcast Theme -->
+  <!-- ===== Broadcast Theme CSS ===== -->
   <link rel="stylesheet" href="/broadcast.css">
-
-  <style>
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
-                   Roboto, Helvetica, Arial, sans-serif;
-      margin: 0;
-      background: #ffffff;
-      color: #111;
-      line-height: 1.65;
-    }
-
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 32px 24px;
-    }
-
-    .site-header {
-      margin-bottom: 40px;
-    }
-
-    .branding {
-      display: flex;
-      align-items: center;
-      gap: 16px;
-      margin-bottom: 12px;
-    }
-
-    .site-logo {
-      width: 64px;
-      height: auto;
-    }
-
-    .site-title h1 {
-      margin: 0;
-      font-size: 20px;
-      font-weight: 700;
-    }
-
-    .site-parent {
-      margin: 2px 0 0;
-      font-size: 14px;
-      color: #555;
-    }
-
-    .site-nav a {
-      text-decoration: none;
-      color: #555;
-      margin-right: 14px;
-      font-size: 15px;
-    }
-
-    .site-nav a.active {
-      color: #8b0000;
-      font-weight: 600;
-    }
-
-    h2 {
-      font-size: 28px;
-      margin-top: 0;
-    }
-
-    .rule {
-      border-bottom: 3px solid #8b0000;
-      margin: 18px 0 32px;
-    }
-
-    .show {
-      margin-bottom: 56px;
-    }
-
-    .show h3 {
-      color: #8b0000;
-      margin-bottom: 6px;
-      font-size: 1.35rem;
-    }
-
-    .listen-badge {
-      margin: 8px 0 12px;
-    }
-
-    .listen-badge img {
-      height: 36px;
-      width: auto;
-    }
-
-    iframe {
-      margin-top: 12px;
-      border: none;
-    }
-
-    .studio-divider {
-      margin: 36px 0;
-      text-align: center;
-      font-size: 0.8rem;
-      color: #666;
-      letter-spacing: 0.04em;
-    }
-
-    .about-playback {
-      background: #f7f7f7;
-      border-left: 5px solid #8b0000;
-      padding: 20px 24px;
-      margin: 48px 0;
-    }
-
-    footer {
-      margin-top: 70px;
-      padding-top: 20px;
-      border-top: 1px solid #ccc;
-      font-size: 0.85rem;
-      color: #555;
-    }
-
-    @media (max-width: 640px) {
-      .branding {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: 8px;
-      }
-
-      .site-logo {
-        width: 72px;
-      }
-    }
-  </style>
 </head>
 
 <body>
 <div class="container">
 
-  <!-- HEADER -->
+  <!-- ===== HEADER (IDENTICAL TO HOMEPAGE) ===== -->
   <header class="site-header">
     <div class="branding">
-      <a href="/">
-        <img src="/logo.jpg" alt="Terry Cole Podcast Studio logo" class="site-logo" />
-      </a>
+      <img
+        src="/logo.jpg"
+        alt="Terry Cole Podcast Studio logo"
+        class="site-logo"
+      />
       <div class="site-title">
-        <h1><a href="/" style="text-decoration:none;color:#111;">Terry Cole Podcast Studio</a></h1>
+        <h1>Terry Cole Podcast Studio</h1>
         <p class="site-parent">
           Part of the Terry Cole Broadcast &amp; Recording Studio
         </p>
@@ -175,12 +50,12 @@
     </nav>
   </header>
 
-  <!-- MAIN -->
+  <!-- ===== MAIN CONTENT ===== -->
   <main>
     <h2>Shows &amp; Audio Projects</h2>
     <div class="rule"></div>
 
-    <!-- SHOWS -->
+    <!-- SHOW -->
     <div class="show">
       <h3>🎙️ Terry Cole’s Audio Archives</h3>
       <div class="listen-badge">
@@ -188,8 +63,10 @@
           <img src="/iheart-listen-black.png" alt="Listen on iHeart">
         </a>
       </div>
-      <iframe src="https://widget.spreaker.com/player?show_id=5365299&theme=light&playlist=show&episode_image_position=left&hide-logo=true&hide-likes=true&hide-comments=true&hide-sharing=true&hide-download=true"
-              width="100%" height="350"></iframe>
+      <iframe
+        src="https://widget.spreaker.com/player?show_id=5365299&theme=light&playlist=show&episode_image_position=left&hide-logo=true&hide-likes=true&hide-comments=true&hide-sharing=true&hide-download=true"
+        width="100%" height="350" loading="lazy">
+      </iframe>
     </div>
 
     <div class="studio-divider">Produced by the Terry Cole Broadcast &amp; Recording Studio</div>
@@ -201,8 +78,10 @@
           <img src="/iheart-listen-black.png" alt="Listen on iHeart">
         </a>
       </div>
-      <iframe src="https://widget.spreaker.com/player?show_id=4120454&theme=light&playlist=show&episode_image_position=left&hide-logo=true&hide-likes=true&hide-comments=true&hide-sharing=true&hide-download=true"
-              width="100%" height="350"></iframe>
+      <iframe
+        src="https://widget.spreaker.com/player?show_id=4120454&theme=light&playlist=show&episode_image_position=left&hide-logo=true&hide-likes=true&hide-comments=true&hide-sharing=true&hide-download=true"
+        width="100%" height="350" loading="lazy">
+      </iframe>
     </div>
 
     <div class="studio-divider">Produced by the Terry Cole Broadcast &amp; Recording Studio</div>
@@ -214,8 +93,10 @@
           <img src="/iheart-listen-black.png" alt="Listen on iHeart">
         </a>
       </div>
-      <iframe src="https://widget.spreaker.com/player?show_id=4664315&theme=light&playlist=show&episode_image_position=left&hide-logo=true&hide-likes=true&hide-comments=true&hide-sharing=true&hide-download=true"
-              width="100%" height="350"></iframe>
+      <iframe
+        src="https://widget.spreaker.com/player?show_id=4664315&theme=light&playlist=show&episode_image_position=left&hide-logo=true&hide-likes=true&hide-comments=true&hide-sharing=true&hide-download=true"
+        width="100%" height="350" loading="lazy">
+      </iframe>
     </div>
 
     <div class="studio-divider">Produced by the Terry Cole Broadcast &amp; Recording Studio</div>
@@ -227,8 +108,10 @@
           <img src="/iheart-listen-black.png" alt="Listen on iHeart">
         </a>
       </div>
-      <iframe src="https://widget.spreaker.com/player?show_id=5020228&theme=light&playlist=show&episode_image_position=left&hide-logo=true&hide-likes=true&hide-comments=true&hide-sharing=true&hide-download=true"
-              width="100%" height="350"></iframe>
+      <iframe
+        src="https://widget.spreaker.com/player?show_id=5020228&theme=light&playlist=show&episode_image_position=left&hide-logo=true&hide-likes=true&hide-comments=true&hide-sharing=true&hide-download=true"
+        width="100%" height="350" loading="lazy">
+      </iframe>
     </div>
 
     <div class="studio-divider">Produced by the Terry Cole Broadcast &amp; Recording Studio</div>
@@ -240,9 +123,13 @@
           <img src="/iheart-listen-black.png" alt="Listen on iHeart">
         </a>
       </div>
-      <iframe src="https://widget.spreaker.com/player?show_id=4580634&theme=light&playlist=show&episode_image_position=left&hide-logo=true&hide-likes=true&hide-comments=true&hide-sharing=true&hide-download=true"
-              width="100%" height="350"></iframe>
+      <iframe
+        src="https://widget.spreaker.com/player?show_id=4580634&theme=light&playlist=show&episode_image_position=left&hide-logo=true&hide-likes=true&hide-comments=true&hide-sharing=true&hide-download=true"
+        width="100%" height="350" loading="lazy">
+      </iframe>
     </div>
+
+    <div class="studio-divider">Produced by the Terry Cole Broadcast &amp; Recording Studio</div>
 
     <div class="about-playback">
       <h3>About Playback</h3>
@@ -254,12 +141,16 @@
     </div>
   </main>
 
+  <!-- ===== FOOTER ===== -->
   <footer>
     <p>
       <em>Broadcast legacy. Recorded with care.</em><br>
       Studio updates and related materials are occasionally shared on
-      <a href="https://www.facebook.com/TerryColePodcastStudio" target="_blank" rel="noopener">Facebook</a>.
+      <a href="https://www.facebook.com/TerryColePodcastStudio" target="_blank" rel="noopener">
+        Facebook
+      </a>.
     </p>
+
     <p>
       © Terry Cole Podcast Studio<br>
       Part of the Terry Cole Broadcast &amp; Recording Studio
