@@ -1,0 +1,150 @@
+/* =========================================================
+   BROADCAST / INSTITUTIONAL VISUAL REFINEMENT
+   CSS-ONLY — SAFE TO DROP IN
+   ========================================================= */
+
+/* ---- Base Typography ---- */
+body {
+  font-size: 16px;
+  line-height: 1.65;
+  color: #111;
+}
+
+/* Improve text rendering */
+body, h1, h2, h3 {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ---- Header Refinement ---- */
+.site-header {
+  margin-bottom: 48px;
+}
+
+.branding {
+  margin-bottom: 16px;
+}
+
+.site-logo {
+  width: 56px; /* quieter, more confident */
+}
+
+.site-title h1 {
+  font-size: 19px;
+  letter-spacing: -0.01em;
+}
+
+.site-parent {
+  font-size: 13px;
+  color: #666;
+}
+
+/* ---- Navigation: calmer, editorial ---- */
+.site-nav a {
+  font-weight: 500;
+  color: #666;
+}
+
+.site-nav a.active {
+  color: #8b0000;
+  font-weight: 600;
+}
+
+/* ---- Headings ---- */
+h2 {
+  font-size: 26px;
+  letter-spacing: -0.01em;
+}
+
+h3 {
+  font-size: 20px;
+  letter-spacing: -0.01em;
+}
+
+/* ---- Section Rule ---- */
+.rule {
+  border-bottom-width: 2px;
+  margin: 14px 0 28px;
+}
+
+/* ---- Show Blocks (Program Guide Feel) ---- */
+.show {
+  margin-bottom: 72px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.show:last-of-type {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.show h3 {
+  margin-bottom: 4px;
+}
+
+/* ---- iHeart Badge ---- */
+.listen-badge {
+  margin: 10px 0 14px;
+}
+
+.listen-badge img {
+  height: 34px;
+  opacity: 0.95;
+}
+
+/* ---- Embedded Player ---- */
+iframe {
+  border-radius: 2px;
+}
+
+/* ---- Studio Divider (Institutional Tone) ---- */
+.studio-divider {
+  margin: 48px 0;
+  font-size: 0.75rem;
+  color: #777;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* ---- Callouts & Playback Info ---- */
+.callout,
+.about-playback {
+  background: #f8f8f8;
+  border-left-width: 4px;
+}
+
+.about-playback h3 {
+  font-size: 18px;
+  margin-top: 0;
+}
+
+/* ---- Footer: more official, less casual ---- */
+footer {
+  font-size: 13px;
+  color: #666;
+}
+
+footer em {
+  font-style: normal;
+  font-weight: 500;
+}
+
+/* ---- Mobile: preserve broadcast hierarchy ---- */
+@media (max-width: 640px) {
+  body {
+    font-size: 15.5px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 19px;
+  }
+
+  .show {
+    margin-bottom: 64px;
+  }
+}
