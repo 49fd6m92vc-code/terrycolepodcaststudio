@@ -2,7 +2,89 @@
    BROADCAST / INSTITUTIONAL VISUAL REFINEMENT
    CSS-ONLY — SAFE TO DROP IN
    ========================================================= */
+/* ================================
+   HEADER POLISH — BROADCAST STYLE
+   ================================ */
 
+/* Header container refinement */
+.site-header {
+  padding-bottom: 12px;
+  border-bottom: 1px solid #e4e4e4;
+}
+
+/* Branding alignment polish */
+.branding {
+  align-items: center;
+}
+
+/* Logo: slightly crisper presence */
+.site-logo {
+  transition: opacity 0.15s ease-in-out;
+}
+
+.site-logo:hover {
+  opacity: 0.9;
+}
+
+/* Title: stronger broadcast authority */
+.site-title h1 {
+  letter-spacing: 0.02em;
+}
+
+/* Parent line: quieter, more refined */
+.site-parent {
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+/* Navigation spacing & rhythm */
+.site-nav {
+  margin-top: 6px;
+}
+
+/* Nav links: cleaner broadcast feel */
+.site-nav a {
+  position: relative;
+  padding-bottom: 4px;
+  transition: color 0.15s ease-in-out;
+}
+
+/* Hover cue (very subtle underline) */
+.site-nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #8b0000;
+  transition: width 0.15s ease-in-out;
+}
+
+.site-nav a:hover::after {
+  width: 100%;
+}
+
+/* Active link: firm but not loud */
+.site-nav a.active {
+  letter-spacing: 0.02em;
+}
+
+.site-nav a.active::after {
+  width: 100%;
+}
+
+/* Mobile header tightening */
+@media (max-width: 640px) {
+  .site-header {
+    padding-bottom: 8px;
+  }
+
+  .site-nav {
+    margin-top: 10px;
+  }
+}
 /* ---- Base Typography ---- */
 body {
   font-size: 16px;
