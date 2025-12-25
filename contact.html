@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
   <title>Contact · Terry Cole Podcast Studio</title>
 
   <!-- ===== Open Graph / Social Preview ===== -->
@@ -16,34 +15,163 @@
 
   <!-- Twitter / X -->
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Contact · Terry Cole Podcast Studio">
+  <meta name="twitter:description" content="Get in touch regarding audio projects, archival materials, and broadcast history connected to the Terry Cole Podcast Studio.">
+  <meta name="twitter:image" content="https://terrycolepodcaststudio.com/og-image.png">
 
   <!-- Favicon -->
   <link rel="icon" href="/favicon.ico">
 
-  <!-- Broadcast Theme -->
-  <link rel="stylesheet" href="/broadcast.css">
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+                   Roboto, Helvetica, Arial, sans-serif;
+      margin: 0;
+      background: #ffffff;
+      color: #111;
+      line-height: 1.65;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 32px 24px;
+    }
+
+    .site-header {
+      margin-bottom: 40px;
+    }
+
+    .branding {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 12px;
+    }
+
+    .site-logo {
+      width: 64px;
+      height: auto;
+    }
+
+    .site-title h1 {
+      margin: 0;
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    .site-parent {
+      margin: 2px 0 0;
+      font-size: 14px;
+      color: #555;
+    }
+
+    .site-nav a {
+      text-decoration: none;
+      color: #555;
+      margin-right: 14px;
+      font-size: 15px;
+    }
+
+    .site-nav a.active {
+      color: #8b0000;
+      font-weight: 600;
+    }
+
+    h2 {
+      font-size: 28px;
+      margin-top: 0;
+    }
+
+    .rule {
+      border-bottom: 3px solid #8b0000;
+      margin: 18px 0 32px;
+    }
+
+    p {
+      max-width: 760px;
+    }
+
+    h3 {
+      font-size: 1.35rem;
+      color: #8b0000;
+      margin-top: 44px;
+    }
+
+    ul {
+      padding-left: 22px;
+      margin-top: 14px;
+    }
+
+    .callout {
+      background: #f7f7f7;
+      border-left: 5px solid #8b0000;
+      padding: 22px 26px;
+      margin: 36px 0;
+    }
+
+    input, textarea {
+      font-family: inherit;
+      font-size: 15px;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+
+    button {
+      background: #8b0000;
+      color: #fff;
+      border: none;
+      padding: 10px 18px;
+      font-size: 14px;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #6f0000;
+    }
+
+    footer {
+      margin-top: 70px;
+      padding-top: 20px;
+      border-top: 1px solid #ccc;
+      font-size: 0.85rem;
+      color: #555;
+    }
+
+    @media (max-width: 640px) {
+      .branding {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 8px;
+      }
+
+      .site-logo {
+        width: 72px;
+      }
+
+      .site-title h1 {
+        font-size: 18px;
+      }
+
+      .site-parent {
+        font-size: 13px;
+      }
+    }
+  </style>
 </head>
 
 <body>
 <div class="container">
 
-  <!-- ===== HEADER ===== -->
+  <!-- HEADER -->
   <header class="site-header">
     <div class="branding">
-      <a href="/">
-        <img
-          src="/logo.jpg"
-          alt="Terry Cole Podcast Studio logo"
-          class="site-logo"
-        />
-      </a>
-
+      <img src="/logo.jpg" alt="Terry Cole Podcast Studio logo" class="site-logo" />
       <div class="site-title">
-        <h1>
-          <a href="/" style="text-decoration:none;color:inherit;">
-            Terry Cole Podcast Studio
-          </a>
-        </h1>
+        <h1>Terry Cole Podcast Studio</h1>
         <p class="site-parent">
           Part of the Terry Cole Broadcast &amp; Recording Studio
         </p>
@@ -58,12 +186,12 @@
     </nav>
   </header>
 
-  <!-- ===== MAIN CONTENT ===== -->
+  <!-- MAIN -->
   <main>
     <h2>Contact</h2>
     <div class="rule"></div>
 
-    <p style="max-width:760px;">
+    <p>
       The Terry Cole Podcast Studio welcomes inquiries related to audio projects,
       archival materials, and broadcast history.
     </p>
@@ -71,34 +199,16 @@
     <h3>📬 Get in Touch</h3>
 
     <div class="callout">
-      <form
-        action="mailto:bhamblin@terrycolepodcaststudio.com"
-        method="post"
-        enctype="text/plain"
-      >
+      <form action="mailto:bhamblin@terrycolepodcaststudio.com" method="post" enctype="text/plain">
 
         <p>
-          <label>
-            <strong>Name</strong><br>
-            <input
-              type="text"
-              name="Name"
-              required
-              style="width:100%;max-width:420px;"
-            >
-          </label>
+          <strong>Name</strong><br>
+          <input type="text" name="Name" required style="width:100%;max-width:420px;">
         </p>
 
         <p>
-          <label>
-            <strong>Email</strong><br>
-            <input
-              type="email"
-              name="Email"
-              required
-              style="width:100%;max-width:420px;"
-            >
-          </label>
+          <strong>Email</strong><br>
+          <input type="email" name="Email" required style="width:100%;max-width:420px;">
         </p>
 
         <p>
@@ -109,27 +219,18 @@
         </p>
 
         <p>
-          <label>
-            <strong>Message</strong><br>
-            <textarea
-              name="Message"
-              rows="5"
-              required
-              style="width:100%;max-width:620px;"
-            ></textarea>
-          </label>
+          <strong>Message</strong><br>
+          <textarea name="Message" rows="5" required style="width:100%;max-width:620px;"></textarea>
         </p>
 
         <p>
-          <button type="submit">
-            Send Message
-          </button>
+          <button type="submit">Send Message</button>
         </p>
+
       </form>
     </div>
 
     <h3>🎙️ Submissions &amp; Inquiries</h3>
-
     <p>Please reach out if you have:</p>
     <ul>
       <li>Historical recordings or broadcast materials related to Terry Cole</li>
@@ -137,24 +238,18 @@
       <li>Questions about existing audio projects</li>
     </ul>
 
-    <p>
-      Messages are reviewed with care. Responses are provided when requested.
-    </p>
+    <p>Messages are reviewed with care. Responses are provided when requested.</p>
 
     <h3>📍 Location</h3>
-    <p>
-      The Terry Cole Podcast Studio is based in <strong>Ohio, United States</strong>.
-    </p>
+    <p>The Terry Cole Podcast Studio is based in <strong>Ohio, United States</strong>.</p>
   </main>
 
-  <!-- ===== FOOTER ===== -->
+  <!-- FOOTER -->
   <footer>
     <p>
       <em>Broadcast legacy. Recorded with care.</em><br>
       Studio updates and related materials are occasionally shared on
-      <a href="https://www.facebook.com/TerryColePodcastStudio" target="_blank" rel="noopener">
-        Facebook
-      </a>.
+      <a href="https://www.facebook.com/TerryColePodcastStudio" target="_blank" rel="noopener">Facebook</a>.
     </p>
 
     <p>
