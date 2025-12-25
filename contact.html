@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Contact · Terry Cole Podcast Studio</title>
 
-  <!-- ===== Open Graph / Social Preview ===== -->
+  <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Contact · Terry Cole Podcast Studio">
   <meta property="og:description" content="Get in touch regarding audio projects, archival materials, and broadcast history connected to the Terry Cole Podcast Studio.">
@@ -13,13 +13,8 @@
   <meta property="og:url" content="https://terrycolepodcaststudio.com/contact.html">
   <meta property="og:site_name" content="Terry Cole Podcast Studio">
 
-  <!-- Twitter / X -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Contact · Terry Cole Podcast Studio">
-  <meta name="twitter:description" content="Get in touch regarding audio projects, archival materials, and broadcast history connected to the Terry Cole Podcast Studio.">
-  <meta name="twitter:image" content="https://terrycolepodcaststudio.com/og-image.png">
 
-  <!-- Favicon -->
   <link rel="icon" href="/favicon.ico">
 
   <style>
@@ -88,19 +83,10 @@
       margin: 18px 0 32px;
     }
 
-    p {
-      max-width: 760px;
-    }
-
     h3 {
       font-size: 1.35rem;
       color: #8b0000;
       margin-top: 44px;
-    }
-
-    ul {
-      padding-left: 22px;
-      margin-top: 14px;
     }
 
     .callout {
@@ -110,12 +96,16 @@
       margin: 36px 0;
     }
 
-    input, textarea {
-      font-family: inherit;
-      font-size: 15px;
+    input, textarea, select {
+      width: 100%;
+      max-width: 520px;
       padding: 8px;
-      border: 1px solid #ccc;
-      border-radius: 3px;
+      font-size: 15px;
+      margin-top: 4px;
+    }
+
+    textarea {
+      max-width: 640px;
     }
 
     button {
@@ -123,8 +113,7 @@
       color: #fff;
       border: none;
       padding: 10px 18px;
-      font-size: 14px;
-      border-radius: 3px;
+      font-size: 15px;
       cursor: pointer;
     }
 
@@ -143,21 +132,11 @@
     @media (max-width: 640px) {
       .branding {
         flex-direction: column;
-        align-items: center;
         text-align: center;
-        gap: 8px;
       }
 
       .site-logo {
         width: 72px;
-      }
-
-      .site-title h1 {
-        font-size: 18px;
-      }
-
-      .site-parent {
-        font-size: 13px;
       }
     }
   </style>
@@ -169,12 +148,10 @@
   <!-- HEADER -->
   <header class="site-header">
     <div class="branding">
-      <img src="/logo.jpg" alt="Terry Cole Podcast Studio logo" class="site-logo" />
+      <img src="/logo.jpg" alt="Terry Cole Podcast Studio logo" class="site-logo">
       <div class="site-title">
         <h1>Terry Cole Podcast Studio</h1>
-        <p class="site-parent">
-          Part of the Terry Cole Broadcast &amp; Recording Studio
-        </p>
+        <p class="site-parent">Part of the Terry Cole Broadcast &amp; Recording Studio</p>
       </div>
     </div>
 
@@ -202,25 +179,41 @@
       <form action="mailto:bhamblin@terrycolepodcaststudio.com" method="post" enctype="text/plain">
 
         <p>
-          <strong>Name</strong><br>
-          <input type="text" name="Name" required style="width:100%;max-width:420px;">
-        </p>
-
-        <p>
-          <strong>Email</strong><br>
-          <input type="email" name="Email" required style="width:100%;max-width:420px;">
-        </p>
-
-        <p>
-          <label>
-            <input type="checkbox" name="Response Requested" value="Yes">
-            I would like a response to this message
+          <label><strong>Name</strong><br>
+            <input type="text" name="Name" required>
           </label>
         </p>
 
         <p>
-          <strong>Message</strong><br>
-          <textarea name="Message" rows="5" required style="width:100%;max-width:620px;"></textarea>
+          <label><strong>Email</strong><br>
+            <input type="email" name="Email" required>
+          </label>
+        </p>
+
+        <p>
+          <label><strong>Send To</strong><br>
+            <select name="Inquiry Type">
+              <option>General Inquiry</option>
+              <option>Terry Cole’s Audio Archives</option>
+              <option>OSSB Inside and Out</option>
+              <option>Brendon Hamblin’s Audio Projects</option>
+              <option>Andy &amp; Steph’s Top Ten Podcast</option>
+              <option>The Andy &amp; Brendon Podcast</option>
+            </select>
+          </label>
+        </p>
+
+        <p>
+          <label><strong>Message</strong><br>
+            <textarea name="Message" rows="5" required></textarea>
+          </label>
+        </p>
+
+        <p>
+          <label>
+            <input type="checkbox" name="Reply Requested" value="Yes">
+            I would like a response to this message
+          </label>
         </p>
 
         <p>
@@ -231,7 +224,7 @@
     </div>
 
     <h3>🎙️ Submissions &amp; Inquiries</h3>
-    <p>Please reach out if you have:</p>
+
     <ul>
       <li>Historical recordings or broadcast materials related to Terry Cole</li>
       <li>Information supporting preservation of radio history</li>
@@ -241,21 +234,14 @@
     <p>Messages are reviewed with care. Responses are provided when requested.</p>
 
     <h3>📍 Location</h3>
-    <p>The Terry Cole Podcast Studio is based in <strong>Ohio, United States</strong>.</p>
+    <p>The Terry Cole Podcast Studio is based in <strong>Marion Ohio, United States</strong>.</p>
   </main>
 
   <!-- FOOTER -->
   <footer>
-    <p>
-      <em>Broadcast legacy. Recorded with care.</em><br>
-      Studio updates and related materials are occasionally shared on
-      <a href="https://www.facebook.com/TerryColePodcastStudio" target="_blank" rel="noopener">Facebook</a>.
-    </p>
-
-    <p>
-      © Terry Cole Podcast Studio<br>
-      Part of the Terry Cole Broadcast &amp; Recording Studio
-    </p>
+    <p><em>Broadcast legacy. Recorded with care.</em></p>
+    <p>© Terry Cole Podcast Studio<br>
+    Part of the Terry Cole Broadcast &amp; Recording Studio</p>
   </footer>
 
 </div>
